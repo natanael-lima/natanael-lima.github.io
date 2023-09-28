@@ -58,8 +58,8 @@ body {
     background-color: rgba(255, 255, 255, 0.8); /* Un fondo semitransparente */
     z-index: 9999; /* Asegura que el spinner esté por encima de otros elementos */
   }
-
- /*MENU & BANNER*/ 
+  
+ /*BANNER*/ 
 .banner-section{
   position: relative;
   width: 100%;
@@ -93,7 +93,17 @@ img#portada{
   z-index: 0; /* Coloca el video detrás del overlay */
 }
 
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logo-mobile{
+      content: url('../img/logome.png');
+      margin:340px 0px 0px 30px;
+      width:330px;
+      height:135px;
+    }
+}
 
+ /*MENU*/ 
 header{
 	position: fixed;
 	width: 100%;
@@ -135,18 +145,8 @@ ul a:hover{
   
 }
 
-.menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 150px;
-	background-color:rgba(0, 8, 10, 0.965);
-  border-radius: 5px;
-  padding: 0;
-}
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
-  
 }
 
 .active-link {
@@ -161,7 +161,15 @@ img#logo{
 	margin-top: 300px;
 	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
 }
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
 /*REPONSIVE*/
+
+
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
   /* Estilos para el menú hamburguesa */
@@ -169,59 +177,26 @@ img#logo{
     display: block;
     cursor: pointer;
   }
-
   .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: #F3F3F3;
+    border-radius: 2px;
+    background-color: #ffffff;
   }
 
   /* Estilos para el menú desplegable */
-  #nav-list {
-    display: none;
-    background-color: #16262e;
-    
-    
 
-    position: absolute;
-	  list-style: none;
-	  width: 150px;
-	  background-color:rgba(0, 8, 10, 0.965);
-    padding: 0;
-  }
-
-  .menu-horizontal li.has-submenu:hover .menu-vertical {
-    display: block;
-  }
-}
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: #F3F3F3;
-}
-
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
   #nav-list {
     display: none;
     text-align: center;
-    background-color: #16262e;
+    background-color: #0f1f35;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
     z-index: 999;
   }
-
-  /*EN PROCESO-----------------------------------------*/
-
   #nav-list.active {
     display: block;
   }
@@ -236,15 +211,13 @@ img#logo{
   #logo {
     display: none;
   }
-
-  header {
-    height: auto;
-  }
-
-  ul li {
-    margin: 15px 0;
-  }
 }
+
+
+
+
+
+
 
 /*SECTION GLOBAL
 section{
@@ -257,256 +230,171 @@ section{
   color:rgba(0, 0, 0, 0.2);
 }*/
 
-/*ABOUT ME*/
-.about-section {
-  width: 100%;
-  height: 50%;
- 
-}
 
-.background-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1; /* Coloca el fondo detrás del contenido */
-}
-
-/* Estilo base del elemento h2 */
-.name-about {
-    font-size: 52px;
-    font-weight: bold;
-    background: linear-gradient(45deg, #128cc4, #5757cf, #71b6ee, #c071ee, #4c7cff, #ad36fc);
-    background-size: 300% 300%;
-    text-align: center;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradient-animation 8s linear infinite;
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-  }
-  }
-
-.content-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    margin-bottom: 10%;
-}
-
-.profile img {
-    margin-left: 100px;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    animation: float 5s ease-in-out infinite alternate;
-}
-
-@keyframes float {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(50px);
-  }
-}
-
-.description {
-    max-width: 600px;
-    padding: 0 20px;
-}
-
-h2 {
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: #16262e;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #465f6b;
-    font-weight: normal;
-}
-
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .content-about {
-    flex-direction: column-reverse; /* Cambia el orden de los elementos en dispositivos móviles */
-  }
-  .content-about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.about-section {
-  text-align: center;
-  padding: 20px;
-}
-.profile img {
-  margin: 0;
-}
-  /* Añade cualquier otro estilo específico para dispositivos móviles aquí */
-}
-
-
-
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-
-section{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
-  color:rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  padding-bottom: 100px; /* Ajusta esto para dar espacio para la ola */
-  text-align: center;
-}
-.video-card {
+/*Titulo globales*/
+.titulo{
+  padding: 12rem 0 2rem;
   position: relative;
-  width: 100%; /* Cambia el ancho para que los videos ocupen todo el ancho */
-  margin-bottom: 20px; /* Añade espacio entre los videos */
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 100%;
+  font-family: "Bebas Neue",Sans-serif;
+  font-size: 6.5rem;
+  color: #3fa5f3;
 }
 
-  /* Añade cualquier otro estilo específico para dispositivos móviles aquí */
+/*ABOUT ME*/
+@media screen and (max-width: 768px) {
+  /* Estilos para el menú hamburguesa */
+  .titulo{
+    padding: 12rem 0 2rem;
+    position: relative;
+    text-align: center;
+    line-height: 100%;
+    font-family: "Bebas Neue",Sans-serif;
+    font-size: 4.5rem;
+    color: #3fa5f3;
+  }
+}
+.about-section {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
 }
 
+.grid{
+    display: grid;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 100%;
+    grid-template-columns: repeat(25,1fr);
+}
+
+.me-image{
+    grid-column-start: 8;
+    grid-column-end: 10;
+    margin-top: var(--spacing-xs);
+}
+
+.me-content img{
+  background-color: rgb(141, 194, 255);
+  border-radius: 200px 200px 0 0;
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.me-info{
+  grid-column-start: 13;
+  grid-column-end: 20;
+   margin-top: var(--24px);
+}
+
+.text-parrafo{
+  font-size: 1.375rem;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: calc(25% - 90px); /* 25% width with 20px margin between boxes */
+    margin: 2px;
+    padding: 15px;
+    border-radius: 2%;
+    text-align: center;     
+}
+
+@media (max-width: 768px) {
+      .box {
+        width: calc(100% - 20px); /* 100% width for screens <= 768px */
+      }
+      .me-image{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        margin-top: var(--spacing-xs);
+    }
+    
+    .me-content img{
+      background-color: rgb(168, 210, 245);
+      border-radius: 200px 200px 0 0;
+    }
+    
+    .me-info{
+      grid-column-start:4;
+      grid-column-end: 30;
+      margin-top: var(--24px);
+    }
+    .text-parrafo{
+      font-size: 1rem;
+    }
+    .box {
+      width: calc(50% - 20px); /* 25% width with 20px margin between boxes */
+      margin: 1px;
+      padding: 12px;
+  }
+}
 
 /*PORTAFOLIO*/
 .portfolio-section {
-  
   width: 100%;
-  height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 800;
   color:rgba(0, 0, 0, 0.2);
   
 }
-
-.card-portafolio{
-  position: relative;
-  width: 400px;
-  height:230px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px); /* Tres tarjetas en una fila de 300px de ancho */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
 }
 
-.card-portafolio .poster{
-  position: relative;
-  overflow: hidden;
-}
-
-.card-portafolio .poster::before{
-  content: '';
-  position: absolute;
-  bottom: -60px;
-  width:100% ;
-  height: 100%;
-  transition: 0.5s;
-  z-index: 1;
-}
-
-.card-portafolio:hover .poster::before{
- bottom: 0;
-}
-.card-portafolio .poster img{
-  width: 100%;
-  transition: 0.5s;
-}
-
-.card-portafolio:hover .poster img{
-  transform: translateY(-25px);
-  filter: blur(3px);
-}
-
-.card-portafolio .detalle {
-  position: absolute;
-  width: 100%;
-  bottom: -95px;
-  left: 0;
-  padding: 20px;
-  z-index: 2;
-  transition: 0.5s;
-}
-
-.card-portafolio:hover .detalle{
-  bottom: 0px;
-}
-
-.card-portafolio .detalle .logo-poster{
-  max-width: 180px;
-}
-
-.card-portafolio .detalle h2{
-  font-size: 20px;
-  color: rgb(255, 246, 246);
-}
-
-.card-portafolio .detalle .tag{
-position: relative;
-margin-top: 5px;
-}
-.card-portafolio .detalle .tag span{
- padding: 2px 5px;
- color: white;
- background:#6e0bf0;
- border-radius: 4px;
- font-family:monospace;
- font-size: 0.7em;
-}
-
-.card-portafolio .detalle .info{
+.card {
+  width: 350px; /* Ancho de las tarjetas */
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Oculta el desbordamiento de la imagen */
   
-  margin-top: 10px;
 }
 
-.card-portafolio .detalle .info p{
-  color: white;
-  font-size: 0.9em;
+.card img {
+  width: 100%;
+  height: auto; /* Altura automática para mantener la proporción */
+  transition: transform 0.2s; /* Transición de transformación */
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .portafolio.section{
-    align-items: center;
-    width: 100%;
-    margin: 0;
-  }
-  .card-portafolio{
-      
-      width: 400px;
-      height:230px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  }
+.card:hover img {
+  transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
 
-  
-    /* Añade cualquier otro estilo específico para dispositivos móviles aquí */
+.card-content {
+  padding: 16px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 195px); /* Tres tarjetas en una fila de 300px de ancho */
+    
+    gap: 2px; /* Espacio entre las tarjetas */
   }
+  .card{
+    width: 180px;
+  }
+  .card-content h3{
+    font-size: 1em;
+  }
+}
+
 
 /*SECTION CONTACTO*/
-.service-section{
+.contacto-section{
   width: 100%;
   height: 100vh;
   display: flex;
@@ -540,42 +428,36 @@ margin-top: 5px;
   margin-bottom: 20px;
 }
 
-.info-box .icon {
-  font-size: 30px;
+.info-box .icon .iconchild{
+  font-size: 10px;
   margin-right: 15px;
-  color: #4470b3;
+  border-radius: 10%;
 }
 
 .info-box h4 {
   margin: 0;
-  font-size: 20px;
-  color: #333;
+  font-size: 15px;
+  color: #7a7a7a;
 }
 
 .info-box p {
   margin: 0;
   font-size: 16px;
-  color: #666;
+  
+}
+.info-box a {
+  font-weight: 100;
+  font-size: 16px;
+  color: #1f1f1f;
+  text-decoration: none;
 }
 
-/* Estilo para el título de la sección */
-.section-title {
-  margin-bottom: 30px;
+.info-box a:hover{
+  color: #3fa5f3;
 }
 
-.section-title h2 {
-  font-size: 4em;
-  color: #00080af6;
-  font-weight: 300;
-}
 
-.section-title-line {
-  display: block;
-  margin: 10px auto;
-  width: 50px;
-  height: 3px;
-  background-color:#3c7a89;
-}
+
 
 /*FOOTER*/
 
