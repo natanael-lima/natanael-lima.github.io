@@ -200,8 +200,8 @@ img#logo{
     text-align: center;
     line-height: 100%;
     font-family: "Bebas Neue",Sans-serif;
-    font-size: 4.5rem;
-    color: #3fa5f3;
+    font-size: 3.5rem;
+    color: #82b8d1;
   }
 }
 .about-section {
@@ -294,9 +294,13 @@ img#logo{
     }
     .text-parrafo{
       font-size: 1rem;
+      padding-right: 20px;
     }
     .card-group>.card{
       width: 95%;
+    }
+    .intro{
+      padding: 10px 10px 10px 10px;
     }
 }
 
