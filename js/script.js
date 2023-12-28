@@ -52,3 +52,6 @@ function closeMobileMenu() {
 // Eventos para abrir y cerrar el menú móvil
   document.getElementById("menu-icon").addEventListener("click", openMobileMenu);
   document.getElementById("mobile-menu").addEventListener("click", closeMobileMenu);
+
+
+//Backgroud
