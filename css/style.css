@@ -1,11 +1,11 @@
 body {
-    margin: 0;
     font-family: Arial, Poppins;
     padding: 0;
     scroll-behavior: smooth;
-    background: linear-gradient(70deg, #194b29, #5bc48a, #62f186, #50c581, #51dd80);
+    background: linear-gradient(70deg, #dbffed, #e6fdd7, #e3ffdb, #d1ffed, #ddffe7);
     background-size: 280% 280%;
-    animation: gradient-animation 8s ease infinite;
+    animation: gradient-animation 2s ease infinite;
+    background-color: #031C06;
   }
 
   @keyframes gradient-animation {
@@ -19,7 +19,7 @@ body {
       background-position: 0% 50%;
     }
   }
-  
+
   .loader {
     width: 48px;
     height: 48px;
@@ -58,7 +58,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(1, 43, 27, 0.9); /* Un fondo semitransparente */
+    background-color: rgba(200, 233, 210, 0.97); /* Un fondo semitransparente */
     z-index: 9999; /* Asegura que el spinner esté por encima de otros elementos */
   }
 
@@ -76,7 +76,7 @@ body {
 .navegador{
 	width: 100%;
 	height: 70px;
-	background:rgba(0,0,0,0.7);
+	background:rgba(0, 0, 0, 0.9);
 	-webkit-transition: background-color .5s;
   z-index: 999; 
   position: fixed;
@@ -106,12 +106,12 @@ nav{
 }
 
 .menu-horizontal a{
-	color: #d3ffd8;
+	color: #ebffee;
 	text-decoration: none;
 }
 
 .menu-horizontal a:hover{
-	color: rgb(90, 224, 146);
+	color: rgb(131, 255, 183);
 	text-decoration: none;
   
 }
@@ -279,7 +279,7 @@ img#logo{
 .me-info {
   grid-column-start: 13;
   grid-column-end: 20;
-  margin-top: var(--24px);
+  margin-top: 33px
 }
 
 .text-parrafo {
@@ -287,7 +287,8 @@ img#logo{
   font-weight: 100;
 }
 .intro{
-  font-size: 2.6rem;
+  font-size: 1.6rem;
+  margin-top: 35px;
 }
 /* Agrega estilos para limitar el ancho del contenedor de tarjetas */
 .contenedor {
@@ -339,13 +340,13 @@ img#logo{
 }
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 350px); /* Tres tarjetas en una fila de 300px de ancho */
-  gap: 20px; /* Espacio entre las tarjetas */
+  grid-template-columns: repeat(2, 550px); /* Tres tarjetas en una fila de 300px de ancho */
+  gap: 0px; /* Espacio entre las tarjetas */
   justify-content: center; /* Centra las tarjetas horizontalmente */
 }
 
 .card {
-  width: 350px; /* Ancho de las tarjetas */
+  width: 500px; /* Ancho de las tarjetas */
   margin: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -370,12 +371,11 @@ img#logo{
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: repeat(2, 195px); /* Tres tarjetas en una fila de 300px de ancho */
-    
+    grid-template-columns: repeat(1, 370px); /* Tres tarjetas en una fila de 300px de ancho */
     gap: 2px; /* Espacio entre las tarjetas */
   }
   .card{
-    width: 180px;
+    width: 350px;
   }
   .card-content h3{
     font-size: 1em;
@@ -442,16 +442,13 @@ img#logo{
 }
 
 .info-box a:hover{
-  color: #3fa5f3;
+  color: #32DA78;
 }
-
-
-
 
 /*FOOTER*/
 
 footer{
-  background-color: #00080af6; 
+  background:rgba(0, 0, 0, 0.9);
   color: white; 
   padding: 10px; 
   text-align: center;
@@ -465,5 +462,10 @@ footer{
 }
 
 .socials:hover{
-  color: #3fa5f3;
+  color: #32DA78;
+}
+
+.btn-personalizado{
+  
+  color: #32DA78;
 }
