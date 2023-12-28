@@ -7,37 +7,6 @@ setTimeout(function () {
   spinnerContainer.style.display = 'none';
 }, 2000); // 3000 milisegundos = 3 segundos
 
-//banner-menu animacion logo a nav natacreative
-$(document).ready(function(){
-
-	$("#banner").css({"height":$(window).height() + "px"});
-
-	var flag = false;
-	var scroll;
-
-	$(window).scroll(function(){
-		scroll = $(window).scrollTop();
-
-		if(scroll > 200){
-			if(!flag){
-				$("#logo").css({"margin-top": "5px", "width": "83px","height":"33px"});
-
-				$("header").css({"background-color": "#00080af6"});
-				flag = true;
-			}
-		}else{
-			if(flag){
-				$("#logo").css({"margin-top": "300px", "width": "530px","height":"230px"});
-
-				$("header").css({"background-color": "transparent"});
-				flag = false;
-			}
-		}
-
-
-	});
-
-});
 
 //menu para cambiar de color al hacer clic hover
 document.addEventListener("DOMContentLoaded", function () {
