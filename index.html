@@ -15,265 +15,289 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JFDQBLWG4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-6JFDQBLWG4');
 </script>
+
 <body>
   <div class="spinner-container">
     <span class="loader"></span>
   </div>
-<!--MENU-->
+  <!--MENU-->
   <header class="navegador">
-    <nav>
+    <nav class="nav-padre">
       <div id="menu-icon" class="menu-icon">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-      <ul id="nav-list" class="menu-horizontal" style="padding-left: 0px;" >
-
+      <ul id="nav-list" class="menu-horizontal">
         <li><a href="#about">SOBRE MI</a></li>
-        <li><a href="#portafolio">PROYECTOS</a></li>
+        <li><a href="#habilidad">HABILIDADES</a></li>
+        <li><a href="#portafolio">PORTAFOLIO</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
       </ul>
     </nav>
   </header>
   <!--ABOUT-->
   <section id="about" class="about-section">
-    <!--primero-->
-      <h1 class="titulo"><span>HOLA, MI NOMBRE ES NATANAEL LIMA</span></h1>
-      <div class="grid">
-            <div class="me-image">
-              <div class="me-content">
-                <img src="./img/me2.png" alt="Mi Foto">
-              </div>   
-            </div>
-            <div class="me-info">
-              <h2 class="intro">Soy Analista Programador Universitario de Jujuy, Argentina.</h2>
-              <p class="text-parrafo">Con conocimiento en el
-                desarrollo de aplicaciones web y desktop y
-                organización de datos. Mi destreza como
-                desarrollador se refleja en la implementación de
-                soluciones prácticas y eficientes a través de la
-                codificación en varios lenguajes. Soy responsable,
-              organizado y disfruto trabajar en equipo para
-              lograr los objetivos del proyecto.</p>
-              <a href="https://wa.me/qr/QLFJAA4ZESS4E1" style="text-decoration: none;">
-                <button class="btn btn-sm btn-outline-dark " > Contactame
-                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                 </svg>
-               </button>
-             </a>
-             <a href="./img/CV.pdf" download style="text-decoration: none;">
-               <button class="btn btn-sm btn-outline-dark">CURRICULUM VITE
-                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                   <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                   <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                 </svg>
-               </button>
-             </a>
 
-            </div>
+    <h1 class="titulo"><span>HOLA, MI NOMBRE ES NATANAEL LIMA</span></h1>
+    <div class="grid">
+      <div class="me-image">
+        <div class="me-content">
+          <img src="./img/me2.png" alt="Mi Foto">
+        </div>
       </div>
-      <!--TERCERO-->
-          <h1 class="titulo"><span>HABILIDADES</span></h1>
-          <div class="contenedor">
-            <div class="card-group">
-              <!-- Columna 1: Diseño -->
-              <div class="card">
+      <div class="me-info">
+        <h2 class="sub-titulo">Soy Analista Programador Universitario de Jujuy, Argentina.</h2>
+        <p class="text-parrafo">Con conocimiento en el desarrollo de aplicaciones web y desktop y organización de datos. Mi destreza como desarrollador se refleja en la implementación de
+          soluciones prácticas y eficientes a través de la codificación en varios lenguajes. Soy responsable, organizado y disfruto trabajar en equipo paralograr los objetivos del proyecto.</p>
+        <a href="https://wa.me/qr/QLFJAA4ZESS4E1" style="text-decoration: none;">
+          <button class="btn btn-sm btn-outline-dark "> Contactame
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-whatsapp"
+              viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+            </svg>
+          </button>
+        </a>
+        <a href="./img/CV.pdf" download style="text-decoration: none;">
+          <button class="btn btn-sm btn-outline-dark">CV
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-download"
+              viewBox="0 0 16 16">
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
 
-                <div class="card-body">
-                  <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-stack p-2" viewBox="0 0 16 16">
-                    <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
-                    <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
-                  </svg></div>
-                  <h5 class="card-title text-center text-success" >Herramientas Adicionales</h5>
-                  <p class="card-text">Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones reflexivas.</p>
-                  <h5 class="card-title text-center text-success">Design Tools:</h5>
-                  <div class="text-center">
-                    <ul class="list-unstyled text-secondary">
-                      <li>Corel Draw</li>
-                      <li>Adobe Photoshop</li>
-                      <li>Adobe Lightroom</li>
-                      <li>Adobe Premier Pro</li>
-                      <li>SCRUM(TRELLO/JIRA)</li>
-                      <li>MantisBt</li>
-                      <li>Docker</li>
-                      <li>Git/Github</li>
-                      <li>Terminal</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- Columna 2: Desarrollo Frontend -->
-              <div class="card">
-                
-                <div class="card-body">
-                  <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-file-code-fill p-2" viewBox="0 0 16 16">
-                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z"/>
-                  </svg></div>
-                  <h5 class="card-title text-center text-success">Desarrollo de Software</h5>
-                  <p class="card-text">Me gusta codificar cosas desde cero y disfruto dando vida a las ideas en el navegador.</p>
-                  <h5 class="card-title text-center text-success">Lenguajes:</h5>
-                  <div class="text-center">
-                    <ul class="list-unstyled">
-                      <li>HTML, CSS, Java, TypeScript, C#</li>
-                    </ul>
-                  </div>
-                  <h5 class="card-title text-center text-success">Dev Tools:</h5>
-                  <div class="text-center">
-                    <ul class="list-unstyled">
-                      <li>Bootstrap</li>
-                      <li>Spring Boot</li>
-                      <li>Angular</li>
-                      <li>WPF</li>
-                      <li>.NET</li>
-                      <li>Windows Form</li>
-                      <li>NodeJS</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- Columna 3: Desarrollo Backend -->
-              <div class="card">
-                <div class="card-body">
-                  <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-database-fill p-2" viewBox="0 0 16 16">
-                    <path d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223Z"/>
-                    <path d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
-                    <path d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
-                    <path d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
-                  </svg></div>
-                  <h5 class="card-title text-center text-success">Data Base</h5>
-                  <p class="card-text">Me gusta codificar cosas desde cero y disfruto dando vida a las ideas en el navegador..</p>
-                 
-                  <h5 class="card-title text-center text-success">Dev Tools:</h5>
-                  <div class="text-center">
-                    <ul class="list-unstyled">
-                      <li>MongoDB</li>
-                      <li>MySQL</li>
-                      <li>SQL Server</li>
-                      <li>SQL Basic</li>
-                      <li>Postgresql</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+  <!--HABILIDADES-->
+  <section id="habilidad" class="skill-section">
+    <!--TERCERO-->
+    <h1 class="titulo"><span>HABILIDADES</span></h1>
+    <div class="contenedor">
+      <div class="card-group">
+        <!-- Columna 1: Adicional -->
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor"
+                class="bi bi-stack p-2" viewBox="0 0 16 16">
+                <path
+                  d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
+                <path
+                  d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
+              </svg></div>
+            <h5 class="card-title text-center text-success">Herramientas Adicionales</h5>
+            <p class="card-text">Valoro la estructura de contenido simple, los patrones de diseño limpios y las
+              interacciones reflexivas.</p>
+            <h5 class="card-title text-center text-success">Design Tools:</h5>
+            <div class="text-center">
+              <ul class="list-unstyled">
+                <li>Corel Draw</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe Premier Pro</li>
+                <li>SCRUM(TRELLO/JIRA)</li>
+                <li>MantisBt</li>
+                <li>Docker</li>
+                <li>Git/Github</li>
+                <li>Terminal</li>
+              </ul>
             </div>
           </div>
+        </div>
+        <!-- Columna 2: Desarrollo Software-->
+        <div class="card">
 
+          <div class="card-body">
+            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor"
+                class="bi bi-file-code-fill p-2" viewBox="0 0 16 16">
+                <path
+                  d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z" />
+              </svg></div>
+            <h5 class="card-title text-center text-success">Desarrollo de Software</h5>
+            <p class="card-text">Me gusta codificar cosas desde cero y disfruto dando vida a las ideas en el navegador.
+            </p>
+            <h5 class="card-title text-center text-success">Lenguajes:</h5>
+            <div class="text-center">
+              <ul class="list-unstyled">
+                <li>HTML, CSS, Java, TypeScript, C#</li>
+              </ul>
+            </div>
+            <h5 class="card-title text-center text-success">Dev Tools:</h5>
+            <div class="text-center">
+              <ul class="list-unstyled">
+                <li>Bootstrap</li>
+                <li>Spring Boot</li>
+                <li>Angular</li>
+                <li>WPF</li>
+                <li>.NET</li>
+                <li>Windows Form</li>
+                <li>NodeJS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Columna 3: BaseDatos-->
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor"
+                class="bi bi-database-fill p-2" viewBox="0 0 16 16">
+                <path
+                  d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223Z" />
+                <path
+                  d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                <path
+                  d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                <path
+                  d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+              </svg></div>
+            <h5 class="card-title text-center text-success">Data Base</h5>
+            <p class="card-text"> Disfruto creando estructuras sólidas y eficientes para almacenar y recuperar información.
+            </p>
+
+            <h5 class="card-title text-center text-success">Dev Tools:</h5>
+            <div class="text-center">
+              <ul class="list-unstyled">
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>SQL Server</li>
+                <li>SQL Basic</li>
+                <li>Postgresql</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!--PORTAFOLIO-->
-  <section id="portafolio" class="portfolio-section gradient">
+  <section id="portafolio" class="portfolio-section">
     <div>
       <h1 class="titulo"><span>PROYECTOS</span></h1>
       <div class="card-container">
         <!-- Tarjeta 1 -->
         <div class="card">
-            <img src="./img/plantilla1.png" alt="Imagen de la tarjeta 1">
-            <div class="card-content">
-                <h5>Desktop Application Estacionamiento</h5>
-                <a href="https://github.com/natanael-lima/ProyectoSistemaVehiculos.git" style="text-decoration: none;">
-                  <button class="btn btn-outline-dark" > Ver
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                 </button>
-               </a>
-            </div>
+          <img src="./img/plantilla1.png" alt="Imagen de la tarjeta 1">
+          <div class="card-content">
+            <h5>Desktop Application Estacionamiento</h5>
+            <a href="https://github.com/natanael-lima/ProyectoSistemaVehiculos.git" style="text-decoration: none;">
+              <button class="btn btn-outline-dark"> Ver
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
         <!-- Tarjeta 2 -->
         <div class="card">
-            <img src="./img/plantilla2.png" alt="Imagen de la tarjeta 2">
-            <div class="card-content">
-                <h5>Desktop Application Veterinaria</h5>
-                <a href="https://github.com/natanael-lima/ProyectoVeterinariaPupi.git" style="text-decoration: none;">
-                  <button class="btn btn-outline-dark" > Ver
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                 </button>
-               </a>
-            </div>
+          <img src="./img/plantilla2.png" alt="Imagen de la tarjeta 2">
+          <div class="card-content">
+            <h5>Desktop Application Veterinaria</h5>
+            <a href="https://github.com/natanael-lima/ProyectoVeterinariaPupi.git" style="text-decoration: none;">
+              <button class="btn btn-outline-dark"> Ver
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
-        
-
         <!-- Tarjeta 3 -->
         <div class="card">
-            <img src="./img/plantilla3.png" alt="Imagen de la tarjeta 3">
-            <div class="card-content">
-                <h5>Desktop Application Optica</h5>
-                <a href="https://github.com/natanael-lima/SistemaOptica.git" style="text-decoration: none;">
-                  <button class="btn btn-outline-dark" > Ver
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                 </button>
-               </a>
-            </div>
+          <img src="./img/plantilla3.png" alt="Imagen de la tarjeta 3">
+          <div class="card-content">
+            <h5>Desktop Application Optica</h5>
+            <a href="https://github.com/natanael-lima/SistemaOptica.git" style="text-decoration: none;">
+              <button class="btn btn-outline-dark"> Ver
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
 
         <!-- Tarjeta 4 -->
         <div class="card">
-            <img src="./img/plantilla4.png" alt="Imagen de la tarjeta 4">
-            <div class="card-content">
-                <h5>Landing Page Adelita</h5>
-                <a href="" style="text-decoration: none;">
-                  <button class="btn btn-outline-dark" > Ver
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                 </button>
-               </a>
-            </div>
+          <img src="./img/plantilla4.png" alt="Imagen de la tarjeta 4">
+          <div class="card-content">
+            <h5>Landing Page Adelita</h5>
+            <a href="" style="text-decoration: none;">
+              <button class="btn btn-outline-dark"> Ver
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
 
         <!-- Tarjeta 5 -->
         <div class="card">
-            <img src="./img/plantilla5.png" alt="Imagen de la tarjeta 5">
-            <div class="card-content">
-                <h5>Web Application Gestion de Ventas</h5>
-                <a href="https://github.com/natanael-lima/repo-EmpresauriosTpFinal.git" style="text-decoration: none;">
-                  <button class="btn btn-outline-dark" > Ver
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                 </button>
-               </a>
-                
-            </div>
+          <img src="./img/plantilla5.png" alt="Imagen de la tarjeta 5">
+          <div class="card-content">
+            <h5>Web Application Gestion de Ventas</h5>
+            <a href="https://github.com/natanael-lima/repo-EmpresauriosTpFinal.git" style="text-decoration: none;">
+              <button class="btn btn-outline-dark"> Ver
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </button>
+            </a>
+
+          </div>
         </div>
 
         <!-- Tarjeta 6 -->
         <div class="card">
-            <img src="./img/plantilla6.png" alt="Imagen de la tarjeta 6">
-            <div class="card-content">
-                <h5>Web Application Gestor de Eventos</h5>
-                <a href="https://github.com/maxi1103/TpFinal-PySW-2022.git" style="text-decoration: none;">
-                  <button class="btn btn-outline-dark" > Ver
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                 </button>
-               </a>
-            </div>
+          <img src="./img/plantilla6.png" alt="Imagen de la tarjeta 6">
+          <div class="card-content">
+            <h5>Web Application Gestor de Eventos</h5>
+            <a href="https://github.com/maxi1103/TpFinal-PySW-2022.git" style="text-decoration: none;">
+              <button class="btn btn-outline-dark"> Ver
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
 
     </div>
   </section>
 
   <!--CONTACTO-->
-  <section id="contacto" class="contacto-section gradient">
+  <section id="contacto" class="contacto-section ">
     <div class="contact section-padding">
       <div class="container">
         <div class="row">
@@ -281,28 +305,41 @@
           <div class="col-lg-12 col-md-4">
             <div class="part-info">
               <div class="info-box">
-                <div class="icon" > <a class="iconchild" href="https://wa.me/qr/QLFJAA4ZESS4E1"> <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                </svg></a></div>
+                <div class="icon"> <a class="iconchild" href="https://wa.me/qr/QLFJAA4ZESS4E1"> <svg
+                      xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                      class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    </svg></a></div>
                 <div class="content-contact">
                   <h4>Whatsapp</h4>
                   <p><a href="https://wa.me/qr/QLFJAA4ZESS4E1">https://wa.me/qr/QLFJAA4ZESS4E1</a></p>
                 </div>
               </div>
               <div class="info-box">
-                <div class="icon" > <a class="iconchild" href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/"> <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                </svg></a></div>
+                <div class="icon"> <a class="iconchild"
+                    href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/"> <svg
+                      xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                      class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a></div>
                 <div class="content-contact">
                   <h4>Linkedin</h4>
-                  <p><a href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/">https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/</a></p>
+                  <p><a
+                      href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/">https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/</a>
+                  </p>
                 </div>
               </div>
               <div class="info-box">
-                <div class="icon" > <a class="iconchild" href="https://mail.google.com/mail/u/0/#inbox"> <svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
-                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
-                </svg></a></div>
+                <div class="icon"> <a class="iconchild" href="https://mail.google.com/mail/u/0/#inbox"> <svg
+                      xmlns="http://www.w3.org/2000/svg" width="34" height="44" fill="currentColor"
+                      class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                      <path
+                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                    </svg></a></div>
                 <div class="content-contact">
                   <h4>Email</h4>
                   <p><a href="https://mail.google.com/mail/u/0/#inbox">lima73777@gmail.com</a></p>
@@ -315,31 +352,37 @@
     </div>
   </section>
   <!--FOOTER-->
-  <footer >
-    <div>
-      &copy;Todos los derechos reservado por <a style="color: #32DA78; text-decoration: none;" href="#">Natanael Lima</a>
+  <footer>
+    <div class="p-2">
+      &copy;Todos los derechos reservado por <a style="color: #32DA78; text-decoration: none;" href="#">Natanael
+        Lima</a>
     </div>
     <div class="contenedor">
-      <a class="socials" href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/" >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-          </svg>
+      <a class="socials" href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
       </a>
-      <a class="socials" href="https://github.com/natanael-lima" >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      <a class="socials" href="https://github.com/natanael-lima">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </svg>
       </a>
     </div>
   </footer>
 
   <script src="./js/script.js"></script>
   <script src="../MyPageV0/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
