@@ -5,10 +5,10 @@ spinnerContainer.style.display = 'flex';
 // Oculta el spinner después de 3 segundos
 setTimeout(function () {
   spinnerContainer.style.display = 'none';
-}, 2000); // 3000 milisegundos = 3 segundos
+}, 3000); // 3000 milisegundos = 3 segundos
 
 
-//menu para cambiar de color al hacer clic hover
+//Menu para cambiar de color al hacer clic hover
 document.addEventListener("DOMContentLoaded", function () {
 	const sections = document.querySelectorAll("section");
 	const links = document.querySelectorAll("nav a");
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// reponsive menu
+// Responsive menu
 $(document).ready(function() {
 	$("#menu-icon").click(function() {
 	  $("#nav-list").toggleClass("active");
