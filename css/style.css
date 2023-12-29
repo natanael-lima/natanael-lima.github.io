@@ -79,7 +79,7 @@ body {
   position: fixed;
 }
 
-.nav-padre{
+.nav-padre {
 	display: table;
 	margin: auto;
 	margin-top: 15px;
@@ -88,11 +88,19 @@ body {
 }
 
 /* Estilo base del menú */
-#nav-list li {
-  margin: 0 15px;
-  position: relative;
+ul a{
+	color: #ecffef;
+	text-decoration: none;
 }
 
+#nav-list a:hover{
+	color: #71e49d;
+	text-decoration: none;
+}
+
+#nav-list li:hover .menu-vertical{
+	display: block;
+}
 /* Agrega el subrayado al enlace */
 #nav-list a::after {
   content: '';
@@ -113,34 +121,23 @@ body {
 
 /* Estilos adicionales para resaltar el enlace activo */
 .active-link {
-  color: #adffc9;
+  color: #49ff8f;
 }
 
-.menu-horizontal{
+#nav-list{
 	display: block;
 	float: left;
 	list-style: none;
   padding: 0px;
 }
 
-.menu-horizontal li{
+#nav-list li{
 	float: left;
-	margin: 10px;
+  margin: 0 15px;
+  position: relative;
 }
 
-.menu-horizontal a{
-	color: #ebffee;
-	text-decoration: none;
-}
 
-.menu-horizontal a:hover{
-	color: #71e49d;
-	text-decoration: none;
-}
-
-.menu-horizontal li:hover .menu-vertical{
-	display: block;
-}
 
 .menu-icon {
   display: none;
@@ -206,10 +203,15 @@ body {
     display: none;
   }
 
-  .menu-horizontal li{
+  #nav-list li{
     float: none;
     margin: 0px;
   }
+  /* Ajusta el ancho del subrayado al pasar el mouse */
+  #nav-list a:hover::after {
+  width: 0%;
+  }
+
 }
 
 

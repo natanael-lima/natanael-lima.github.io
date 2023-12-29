@@ -9,7 +9,7 @@ setTimeout(function () {
 
 
 //Menu para cambiar de color al hacer clic hover
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
 	const sections = document.querySelectorAll("section");
 	const links = document.querySelectorAll("nav a");
   
@@ -28,8 +28,22 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	  });
 	});
-  });
+  });*/
+  document.addEventListener("DOMContentLoaded", function () {
+	const links = document.querySelectorAll("nav a");
 
+	links.forEach((link) => {
+	  link.addEventListener("click", function () {
+		// Remover la clase 'active-link' de todos los enlaces
+		links.forEach((otherLink) => {
+		  otherLink.classList.remove("active-link");
+		});
+
+		// Agregar la clase 'active-link' al enlace clicado
+		link.classList.add("active-link");
+	  });
+	});
+  });
 
 
 // Responsive menu
