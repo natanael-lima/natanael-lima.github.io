@@ -1,42 +1,25 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
     font-family: Arial, Poppins;
     padding: 0;
     scroll-behavior: smooth;
-    background: linear-gradient(90deg, #c6ffe3 0%, #e6fdd7 16%, #dbfff3 50%, #d1ffed 83%, #c6ffe3 100%);
+    background: linear-gradient(90deg, #f3fff9 0%, #fafff7 16%, #f3fffc 50%, #f9ffff 83%, #f3fff9 100%);
     background-size: 300% 300%;
     animation: toggle 5s infinite;
     background-color: #031C06;
   }
-  /*GRADIANTE ANIMADO*/
-  @keyframes toggle {
-    from{
-      background-position: 0% 50%;
-    }
-    to{
-      background-position: 150% 50%;
-    }
-  }
-  /*LOADING*/
 
-  .loader {
-    width: 48px;
-    height: 48px;
-    border:10px solid #FFF;
-    border-radius: 50%;
-    position: relative;
-    transform:rotate(45deg);
-    box-sizing: border-box;
+/*GRADIANTE ANIMADO*/
+@keyframes toggle {
+  from{
+    background-position: 0% 50%;
   }
-  .loader::before {
-    content: "";
-    position: absolute;
-    box-sizing: border-box;
-    inset:-10px;
-    border-radius: 50%;
-    border:10px solid #42d379;
-    animation: prixClipFix 3s infinite linear;
+  to{
+    background-position: 150% 50%;
   }
-
+}
   @keyframes prixClipFix {
       0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
       25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
@@ -45,195 +28,83 @@ body {
       100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
   }
     
-.spinner-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Esto asegura que el spinner cubra toda la altura de la ventana */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(200, 233, 210, 0.97); /* Un fondo semitransparente */
-    z-index: 9999; /* Asegura que el spinner esté por encima de otros elementos */
-  }
+/* SECTIONS */
 
-/*TITULOS DE LOS MENU*/
-.titulo{
-  padding: 5rem 0 2rem;
-  position: relative;
+section {
+  padding-top: 2vh;
+  height: 100vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+ /* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 100vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
   text-align: center;
-  line-height: 100%;
-  font-family: "Bebas Neue",Sans-serif;
-  font-size: 6rem;
-  color: #020e03;
-}
- /*MENU*/ 
-.navegador{
-	width: 100%;
-	height: 70px;
-	background:rgba(0, 12, 0, 0.95);
-	-webkit-transition: background-color .5s;
-  z-index: 999; 
-  position: fixed;
 }
 
-.nav-padre {
-	display: table;
-	margin: auto;
-	margin-top: 15px;
-	height: 30px;
-	-webkit-transition: margin-left .5s;
+.section__text p {
+  font-weight: 600;
 }
 
-/* Estilo base del menú */
-ul a{
-	color: #ecffef;
-	text-decoration: none;
+.section__text__p1 {
+  text-align: center;
 }
 
-#nav-list a:hover{
-	color: #71e49d;
-	text-decoration: none;
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
-#nav-list li:hover .menu-vertical{
-	display: block;
-}
-/* Agrega el subrayado al enlace */
-#nav-list a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0;
-  background-color: #71e49d;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  transition: width 0.5s ease;
+.title {
+  font-size: 3rem;
+  text-align: center;
 }
 
-/* Ajusta el ancho del subrayado al pasar el mouse */
-#nav-list a:hover::after {
-  width: 100%;
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
-/* Estilos adicionales para resaltar el enlace activo */
-.active-link {
-  color: #49ff8f;
+/* SOCIALS */
+
+.socials-profile {
+  padding: 10px; 
+  text-decoration: none; 
+  margin-bottom: 100px;
+  color: black;
 }
 
-#nav-list{
-	display: block;
-	float: left;
-	list-style: none;
-  padding: 0px;
+.socials-profile:hover{
+  color: #32DA78;
 }
 
-#nav-list li{
-	float: left;
-  margin: 0 15px;
-  position: relative;
-}
+/* ABOUT SECTION */
 
 
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-/*RESPONSIVE*/
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  /* Estilos para el menú hamburguesa */
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 20px; /* Puedes ajustar la posición vertical según tus necesidades */
-    right: 20px; /* Ajusta la posición horizontal según tus necesidades */
-  }
-
-  .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    border-radius: 2px;
-    background-color: #ffffff;
-  }
-
-  /* Estilos para el menú desplegable */
-  #nav-list {
-    display: none;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 70px; /* Ajuste para evitar superposición con la barra de navegación */
-    left: 0;
-    width: 100%;
-    z-index: 999;
-  }
-
-  #nav-list.active {
-    display: block;
-  }
-
-  #nav-list a {
-    display: block;
-    padding: 17px;
-    color: #fff;
-    text-decoration: none;
-    width: 100%; /* Ocupar todo el ancho disponible */
-    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
-    border-bottom: 1px solid #f0fff93a;
-    text-align: right;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .imagen-logo {
-    display: none;
-  }
-
-  #logo {
-    display: none;
-  }
-
-  #nav-list li{
-    float: none;
-    margin: 0px;
-  }
-  /* Ajusta el ancho del subrayado al pasar el mouse */
-  #nav-list a:hover::after {
-  width: 0%;
-  }
-
-}
-
-
-/*ABOUT*/
-.about-section {
-  z-index: 10;
-  padding-bottom: 20%;
-  position: relative;
-  width: 100%;
-  padding-top: 5%;
-  font-weight: 500;
-  color: #0D411C;
-}
-
-.grid {
-  display: grid;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  width: 100%;
-  grid-template-columns: repeat(25, 1fr);
-}
-
+/*ABOUT FOTO*/
 .me-image {
   grid-column-start: 8;
   grid-column-end: 10;
@@ -244,7 +115,7 @@ ul a{
   background-color: rgb(147, 255, 183);
   border-radius: 200px 200px 0 0;
   width: 320px;
-  height: 400px;
+  height: 360px;
   object-fit: cover;
 }
 
@@ -254,35 +125,9 @@ ul a{
   margin-top: 33px
 }
 
-.text-parrafo {
-  font-size: 1.375rem;
-  font-weight: 100;
-}
-.sub-titulo{
-  font-size: 1.6rem;
-  margin-top: 35px;
-}
-/* Agrega estilos para limitar el ancho del contenedor de tarjetas */
-.contenedor {
-  max-width: 1200px; /* Puedes ajustar este valor según tus preferencias */
-  margin: 0 auto; /* Centra el contenedor en el medio */
-}
-
-.card-group>.card{
-  height: 500px;
-}
 
 @media (max-width: 768px) {
     /* Estilos para el menú hamburguesa */
-    .titulo{
-    padding: 12rem 0 2rem;
-    position: relative;
-    text-align: center;
-    line-height: 100%;
-    font-family: "Bebas Neue",Sans-serif;
-    font-size: 3.5rem;
-    color: #031C06;
-    }
     .me-image{
         grid-column-start: 4;
         grid-column-end: 7;
@@ -299,18 +144,61 @@ ul a{
       grid-column-end: 30;
       margin-top: var(--24px);
     }
-    .text-parrafo{
-      font-size: 1.3rem;
-      padding-right: 20px;
-    }
-    .card-group>.card{
-      width: 95%;
-    }
-    .intro{
-      padding: 10px 10px 10px 10px;
-    }
+ 
 }
-/*HABILIDADES*/
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/*SKILLS*/
 .skill-section{
   z-index: 10;
   padding-bottom: 20%;
@@ -321,14 +209,9 @@ ul a{
   color: #0D411C;
 }
 
+
 /*PORTAFOLIO*/
-.portfolio-section {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.8); /* Color del texto */
-}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 550px); /* Tres tarjetas en una fila de 300px de ancho */
@@ -372,23 +255,72 @@ ul a{
   }
 }
 
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
 
 /*SECTION CONTACTO*/
-.contacto-section{
-  width: 100%;
-  height: 100vh;
+#contact {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-weight: 800;
+  flex-direction: column;
+  height: 150vh;
 }
 
-.contact {
+.contact-info-upper-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
 }
 
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
 /* Estilo para las cajas de información */
 .part-info {
   display: flex;
@@ -442,6 +374,7 @@ footer{
   color: white; 
   padding: 10px; 
   text-align: center;
+  
 }
 
 .socials {
@@ -453,4 +386,108 @@ footer{
 
 .socials:hover{
   color: #32DA78;
+}
+
+
+/*VERSIONES MOBILE*/
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ 
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
 }
