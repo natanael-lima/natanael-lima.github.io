@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 body {
-    font-family: Arial, Poppins;
+    font-family: Poppins;
     scroll-behavior: smooth;
     background: linear-gradient(90deg, #f3fff9 0%, #fafff7 16%, #f3fffc 50%, #f9ffff 83%, #f3fff9 100%);
     background-size: 300% 300%;
@@ -19,11 +19,125 @@ body {
     background-position: 150% 50%;
   }
 }
-    
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-b {
+  font-weight: 100;
+  transition: all 400ms ease;
+  padding: 0.5rem;
+  width: 8rem;
+  border-radius: 3rem;
+}
+.btn-color-0{
+  border: #2fcc71 0.1rem solid;
+}
+.btn-color-1{
+  border: #000000 0.1rem solid;
+}
+.btn-color-2 {
+  border: #2fcc71 0.1rem solid;
+  color: #2fcc71;
+}
+
+.btn-color-0:hover,
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-0
+{
+  background: #2fcc71;
+  color: white;
+  border: #2fcc71 0rem;
+}
+
+.btn-color-1
+{
+  background: #000000;
+  color: white;
+  border: #000000 0rem;
+}
+.btn-color-2 {
+  background: none;
+  
+}
+.btn-color-0:hover {
+  background: #26ad5f;
+}
+.btn-color-1:hover {
+  background: #2fcc71;
+}
+.btn-color-2:hover {
+  border: #2fcc71 0.1rem solid;
+  background: #2fcc71;
+  color: white;
+}
+.btn-container {
+  gap: 1rem;
+}
+/* FILTER BOTON */
+.filter-content{
+  margin: 2rem auto 2.5rem; /* Ajusta el margen para centrar verticalmente */
+  max-width: 300px; /* Establece el ancho máximo */
+  background-color: #2fcc71;
+  padding: .375rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap:0.5rem;
+}
+.filter-btn{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition:.3s;
+}
+.filter-btn:hover{
+  background-color: #26ad5f;
+}
+
+
 /* NAVEGADOR */
 header{
   opacity: 0.97;
 }
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #242725;
+  transition: color 0.5s;
+}
+
+.nav-underline .nav-link:hover {
+  color: #2fcc71;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: #6f42c1; }
+
 
 
 /* SECTIONS */
@@ -78,6 +192,7 @@ section {
   text-align: center;
 }
 
+/* SOCIALS */
 #socials-container {
   display: flex;
   justify-content: center;
@@ -85,23 +200,24 @@ section {
   gap: 1rem;
 }
 
-/* SOCIALS */
-
 .socials-profile {
   padding: 10px; 
   text-decoration: none; 
   margin-bottom: 100px;
   color: black;
+  transition: color 0.5s;
 }
 
 .socials-profile:hover{
   color: #2fcc71;
+  transform: scale(1.05);
 }
+
+
 
 /* ABOUT SECTION */
 
-
-/*ABOUT FOTO*/
+/*PROFILE FOTO*/
 .me-image {
   grid-column-start: 8;
   grid-column-end: 10;
@@ -151,8 +267,8 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .about-details-container {
@@ -166,7 +282,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 5rem;
 }
 
 .arrow {
@@ -186,13 +302,13 @@ section {
 }
 
 .section-container {
-  gap: 4rem;
-  height: 80%;
+  gap: 5rem;
+  height: 50%;
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 300px;
   margin: auto 0;
 }
 
@@ -234,20 +350,17 @@ section {
 }
 
 
-
-
-
 /*PORTAFOLIO*/
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 550px); /* Tres tarjetas en una fila de 300px de ancho */
+  grid-template-columns: repeat(3, 350px); /* Tres tarjetas en una fila de 300px de ancho */
   gap: 0px; /* Espacio entre las tarjetas */
   justify-content: center; /* Centra las tarjetas horizontalmente */
 }
 
 .card {
-  width: 500px; /* Ancho de las tarjetas */
+  width: 300px; /* Ancho de las tarjetas */
   margin: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -257,11 +370,12 @@ section {
 .card img {
   width: 100%;
   height: auto; /* Altura automática para mantener la proporción */
-  transition: transform 0.2s; /* Transición de transformación */
+  transition: transform 0.5s; /* Transición de transformación */
 }
 
 .card:hover img {
-  transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+  transform: scale(1.08); /* Efecto de zoom al pasar el cursor */
+  
 }
 
 .card-content {
@@ -309,23 +423,13 @@ section {
   border-color: rgb(163, 163, 163);
 }
 
-/* PERSONAL BTN*/
-.btn-personal{
-	background-color: #2fcc71;
-	color:#e1faf7;
-}
 
-.btn-personal:hover{
-	background-color: #2fcc71;
-	color: white;
-}
 
 /*SECTION CONTACTO*/
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 150vh;
 }
 
 /* Estilo para las cajas de información */
@@ -354,10 +458,12 @@ footer p {
   padding: 10px; 
   text-decoration: none; 
   color: black;
+  transition: color 0.5s;
 }
 
 .socials-footer:hover{
   color: #2fcc71;
+  transform: scale(1.05);
 }
 
 
