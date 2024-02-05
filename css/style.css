@@ -3,7 +3,6 @@ html{
 }
 body {
     font-family: Arial, Poppins;
-    padding: 0;
     scroll-behavior: smooth;
     background: linear-gradient(90deg, #f3fff9 0%, #fafff7 16%, #f3fffc 50%, #f9ffff 83%, #f3fff9 100%);
     background-size: 300% 300%;
@@ -20,19 +19,17 @@ body {
     background-position: 150% 50%;
   }
 }
-  @keyframes prixClipFix {
-      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
-      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
-      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
-      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
-  }
     
-/* SECTIONS */
+/* NAVEGADOR */
+header{
+  opacity: 0.97;
+}
 
+
+/* SECTIONS */
 section {
-  padding-top: 2vh;
-  height: 100vh;
+  padding-top: 4vh;
+  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -98,7 +95,7 @@ section {
 }
 
 .socials-profile:hover{
-  color: #32DA78;
+  color: #2fcc71;
 }
 
 /* ABOUT SECTION */
@@ -149,6 +146,7 @@ section {
 
 #about {
   position: relative;
+  height: 80;
 }
 
 .about-containers {
@@ -208,6 +206,35 @@ section {
   font-weight: 500;
   color: #0D411C;
 }
+
+
+.toggle-section {
+  text-align: center;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #2fcc71;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  opacity: 0.8;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+
+
 
 
 /*PORTAFOLIO*/
@@ -282,6 +309,16 @@ section {
   border-color: rgb(163, 163, 163);
 }
 
+/* PERSONAL BTN*/
+.btn-personal{
+	background-color: #2fcc71;
+	color:#e1faf7;
+}
+
+.btn-personal:hover{
+	background-color: #2fcc71;
+	color: white;
+}
 
 /*SECTION CONTACTO*/
 #contact {
@@ -291,101 +328,36 @@ section {
   height: 150vh;
 }
 
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
 /* Estilo para las cajas de información */
 .part-info {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px;
+  padding: 30px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.info-box .icon .iconchild{
-  font-size: 10px;
-  margin-right: 15px;
-  border-radius: 10%;
-}
-
-.info-box h4 {
-  margin: 0;
-  font-size: 15px;
-  color: #7a7a7a;
-}
-
-.info-box p {
-  margin: 0;
-  font-size: 16px;
-  
-}
-.info-box a {
-  font-weight: 100;
-  font-size: 16px;
-  color: #1f1f1f;
-  text-decoration: none;
-}
-
-.info-box a:hover{
-  color: #32DA78;
-}
 
 /*FOOTER*/
 
-footer{
-  background:rgba(0, 12, 0, 0.95);
-  color: white; 
-  padding: 10px; 
-  text-align: center;
-  
+footer {
+  margin: 1 1rem;
 }
 
-.socials {
+footer p {
+  text-align: center;
+}
+
+.socials-footer {
   padding: 10px; 
   text-decoration: none; 
-  margin-bottom: 100px;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
-.socials:hover{
-  color: #32DA78;
+.socials-footer:hover{
+  color: #2fcc71;
 }
 
 
@@ -478,7 +450,7 @@ footer{
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 90vw;
     justify-content: center;
   }
   .section__text__p2 {
