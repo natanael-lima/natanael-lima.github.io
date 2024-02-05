@@ -26,15 +26,15 @@
   <main>
     <div class="container py-4">
       <!--HEADER-->
-      <header class="pb-3 mb-1 border-bottom">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mt-1 justify-content-center mb-md-0">
-          <img src="./img/logo-ico2.ico" alt="Bootstrap" width="40" height="40">
-          <li><a href="#about" class="nav-link px-2 link-secondary">
-              <p class="section__text__p1">About Me</p>
-            </a></li>
-          <li><a href="#projects" class="nav-link px-2 link-secondary">Proyects</a></li>
-          <li><a href="#contact" class="nav-link px-2 link-secondary">Contact</a></li>
-        </ul>
+      <header class="pb-3 mb-1 border-bottom" >
+        <nav class="nav-underline">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mt-1 justify-content-center mb-md-0">
+            <img src="./img/logo-ico2.ico" alt="Bootstrap" width="40" height="40">
+            <li><a href="#about" class="nav-link px-2">About Me</a></li>
+            <li><a href="#projects" class="nav-link px-2">Proyects</a></li>
+            <li><a href="#contact" class="nav-link px-2">Contact</a></li>
+          </ul>
+        </nav>
       </header>
       <!--ABOUT-->
       <section id="profile">
@@ -50,8 +50,8 @@
           <h1 class="title">Natanael Lima</h1>
           <p class="section__text__p2">Software Developer</p>
           <div class="btn-container">
-            <button class="btn btn-md " style="background-color: rgb(90, 228, 143); color: white;" onclick="window.open('./img/cv.pdf')"> Download CV </button>
-            <a class="btn btn-md btn-outline-dark" href="#contacto"> Contact Info </a>
+            <button class="btn-b btn-color-2 " onclick="window.open('./img/cv.pdf')"> Download CV </button>
+            <button class="btn-b btn-color-0" onclick="location.href='./#contact'">Contact Info</button>
           </div>
           <div id="socials-container">
             <a class="socials-profile" href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/">
@@ -71,44 +71,64 @@
           </div>
         </div>
       </section>
-
-      <!-- Portfolio Section -->
-
+      <!--ABOUT & SKILL-->
       <section class="toggle-section" id="about">
         <p class="section__text__p1">Get To Know More</p>
-        <div class="btn-group text-center justify-content-center">
-          <button class="btn btn-md " style="background-color: rgb(90, 228, 143); color: white;"><a id="aboutBtn">About Me</a></button>
-          <button class="btn btn-md " style="background-color: rgb(90, 228, 143); color: white;"><a id="skillBtn">Skills</a></button>
-        </div>
+          <div class="filter-content">
+            <button class="filter-btn" id="aboutBtn">About Me</button>
+            <button class="filter-btn" id="skillBtn">Skills</button>
+          </div>
         <!--ABOUT-->
         <div id="aboutContent" class="content active">
-          <h1 class="title">About Me</h1>
           <div class="row align-items-md-stretch mt-4">
+            <div class="col-md-6">
+              <div class="my-3 p-3 bg-body rounded shadow-sm">
+                <h6 class="border-bottom pb-2 mb-0">Experience</h6>
+                <div class="d-flex text-muted pt-3">
+                  <p class="pb-3 mb-0 small lh-sm">
+                    <strong class="d-block text-gray-dark">+3</strong>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quasi veniam eaque praesentium ratione modi, nemo odit ipsam cumque beatae hic, asperiores, illum aperiam dolorum unde quisquam numquam odio eius.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="my-3 p-3 bg-body rounded shadow-sm">
+                <h6 class="border-bottom pb-2 mb-0">Education</h6>
+                <div class="d-flex text-muted pt-3">
+                  <p class="pb-3 mb-0 small lh-sm">
+                    <strong class="d-block text-gray-dark">FIUNJU</strong>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae soluta doloribus, obcaecati dolores fugiat laudantium sit ducimus magnam necessitatibus? Recusandae, blanditiis facilis quo nisi dolorum voluptate error ex minus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div class="col-md-4">
-              <div class="h-50 p-0 text-white rounded-4">
+              <div class="h-100 p-0 text-white rounded-1">
                 <div class="section__pic-container">
                   <img src="./img/me-bg.png" alt="Profile picture" class="about-pic" />
                 </div>
               </div>
             </div>
             <div class="col-md-8">
-              <div class="h-100 p-5 bg-light border rounded-4">
-                <h2>Soy Analista Programador Universitario de Jujuy, Argentina.</h2>
-                <div class="text-container">
-                  <p>
-                    Con conocimiento en el desarrollo de aplicaciones web y desktop y organización de datos. Mi destreza
-                    como desarrollador se refleja en la implementación de
-                    soluciones prácticas y eficientes a través de la codificación en varios lenguajes. Soy responsable,
-                    organizado y disfruto trabajar en equipo paralograr los objetivos del proyecto.
+              <div class="h-100 p-4 bg-body rounded-2 shadow-sm">
+                <div class="d-flex text-muted pt-3">
+                  <p class="pb-3 mb-0 small lh-sm">
+                    <strong class="d-block text-secondary">Soy Analista Programador Universitario de Jujuy, Argentina.</strong>
+                    🖐¡Hola! Soy Natanael Lima graduado en Analista Programador Universitario en la Facultad de Ingeniería de Jujuy 2023.
+                    Durante esta etapa adquirí conocimientos en el desarrollo de aplicaciones y la organización de datos. Mi formación académica y experiencia práctica me han dotado de habilidades fundamentales en programación. Mi destreza como desarrollador se refleja en la implementación de soluciones prácticas y eficientes mediante la codificación en diversos lenguajes.
+
+                    Como apasionado desarrollador de software, me entusiasma contribuir al mundo de la tecnología.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
         <!--SKILLS-->
         <div id="skillContent" class="content">
-          <h1 class="title mb-4">Skills</h1>
           <div class="p-5  mt-4 bg-light rounded-4 border ">
             <div class="container-fluid py-5">
               <div class="row">
@@ -282,6 +302,7 @@
             <div class="card">
               <img src="./img/plantilla1.png" alt="Imagen de la tarjeta 1">
               <div class="card-content">
+                <p class="section__text__p1">Desktop</p>
                 <h5>Desktop Application Estacionamiento</h5>
                 <a href="https://github.com/natanael-lima/ProyectoSistemaVehiculos.git" style="text-decoration: none;">
                   <button class="btn btn-outline-dark btn-sm"> Github
@@ -410,10 +431,9 @@
       </section>
 
       <!--CONTACTO-->
-      <section id="contact">
-        <div class="contact section-padding">
-          <div class="container">
-            <div class="row">
+      <section id="contact" >
+
+    
               <p class="section__text__p1">Get in Touch</p>
               <h1 class="title">Contact Me</h1>
               <div class="col-lg-12 col-md-4 mt-4">
@@ -421,29 +441,29 @@
                   <div class="contact-form">
                     <!-- Formulario con atributo action de Formspree -->
                         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoqkzzk" method="post">
-                          <div class="form-group">
-                            <label for="full-name">Nombre Completo</label>
+                          <div class="form-group mt-3">
+                            <label for="full-name ">Nombre Completo</label>
                             <input type="text" class="form-control" name="name" id="full-name" placeholder="Escribir nombre.." required="">
                           </div>
-                          <div class="form-group">
+                          <div class="form-group mt-3">
                             <label for="email-address">Email</label>
                             <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="Escribir correo..." required="">
                           </div>
-                          <div class="form-group">
+                          <div class="form-group mt-3">
                             <label for="message">Mensaje</label>
                             <textarea class="form-control" rows="5" name="message" id="message" placeholder="Escribir mensaje..." required=""></textarea>
                           </div>
                           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                           <div class="d-grid gap-2 mt-2">
-                            <button class="btn btn-dark" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                            <button class="btn-b btn-color-2" type="submit" class="btn btn-primary btn-lg">Enviar</button>
                           </div>
                         </form>
                     </div>
                 </div>
-              </div>
-            </div>
+          
+        
           </div>
-        </div>
+      
       </section>
       <footer class="pt-3 mt-4 text-muted border-top">
         <p>Copyright &#169; 2024 Natanael Lima.</p>
