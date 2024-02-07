@@ -13,7 +13,7 @@ html{
 body {
     font-family: Poppins;
     scroll-behavior: smooth;
-    background: linear-gradient(90deg, #f1fff8 0%, #f2f8ed 16%, #ecfff9 50%, #eefdfd 83%, #f1fff8 100%);
+    background: linear-gradient(90deg, #eefaf4 0%, #fafff5 16%, #eefffa 50%, #f3ffff 83%, #eefaf4 100%);
     background-size: 300% 300%;
     animation: toggle 5s infinite;
     background-color: #031C06;
@@ -70,14 +70,14 @@ body {
 {
   background: #2fcc71;
   color: white;
-  border: #2fcc71 0rem;
+  border: #2fcc71 0.1rem solid;
 }
 
 .btn-color-1
 {
   background: #000000;
   color: white;
-  border: #000000 0rem;
+  border: #000000 0.1rem solid;
 }
 .btn-color-2 {
   background: none;
@@ -89,11 +89,12 @@ body {
 }
 
 .btn-color-0:hover {
-  background: #26ad5f;
-  border: #26ad5f 0.1rem solid;
+  background: #29b362;
+  border: #29b362 0.1rem solid;
 }
 .btn-color-1:hover {
   background: #2fcc71;
+  border: #2fcc71 0.1rem solid;
 }
 .btn-color-2:hover {
   border: #2fcc71 0.1rem solid;
@@ -113,7 +114,7 @@ body {
 .filter-content{
   margin: 2rem auto 2.5rem; /* Ajusta el margen para centrar verticalmente */
   max-width: 300px; /* Establece el ancho máximo */
-  background-color: var(--firt-color);
+  background-color: #d9f0e5;
   padding: .375rem;
   border-radius: 3rem;
   display: flex;
@@ -125,7 +126,7 @@ body {
   border: none;
   outline: none;
   padding: 1rem;
-  color: white;
+  color: #313131;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 3rem;
@@ -134,14 +135,14 @@ body {
   transition:.3s;
 }
 .filter-btn:hover{
-  background-color: #26ad5f;
+  background-color: #f4fcf8;
 }
 
 /* Estilo para el botón activado */
 .filter-btn:active,
 .filter-btn.active {
-  background-color: #23a358; /* Cambia el color de fondo */
-  color: white; /* Cambia el color del texto */
+  background-color: #f4fcf8; /* Cambia el color de fondo */
+  
 }
 
 /* NAVEGADOR */
