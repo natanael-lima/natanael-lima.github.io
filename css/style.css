@@ -105,10 +105,10 @@ body {
   background: #000;
   color: white;
 }
-
 .btn-container {
   gap: 1rem;
 }
+
 /* FILTER BOTON */
 .filter-content{
   margin: 2rem auto 2.5rem; /* Ajusta el margen para centrar verticalmente */
@@ -141,14 +141,12 @@ body {
 .filter-btn:active,
 .filter-btn.active {
   background-color: #f4fcf8; /* Cambia el color de fondo */
-  
 }
 
 /* NAVEGADOR */
 header{
   opacity: 0.97;
 }
-
 .nav-underline .nav-link {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -157,21 +155,13 @@ header{
   transition: color 0.5s;
   font-weight: 500;
 }
-
 .nav-underline .nav-link:hover {
   color: #2fcc71;
 }
-
 .nav-underline .active {
   font-weight: 500;
   color: #343a40;
 }
-
-.text-white-50 { color: rgba(255, 255, 255, .5); }
-
-.bg-purple { background-color: #6f42c1; }
-
-
 
 /* SECTIONS */
 section {
@@ -188,7 +178,7 @@ section {
 
 /* PROFILE SECTION */
 
-/*PROFILE FOTO*/
+/*FOTO*/
 .me-image {
   grid-column-start: 8;
   grid-column-end: 10;
@@ -203,13 +193,6 @@ section {
   object-fit: cover;
 }
 
-.me-info {
-  grid-column-start: 13;
-  grid-column-end: 20;
-  margin-top: 33px
-}
-
-
 @media (max-width: 768px) {
     /* Estilos para el menú hamburguesa */
     .me-image{
@@ -222,13 +205,6 @@ section {
       background-color: rgb(168, 245, 175);
       border-radius: 200px 200px 0 0;
     }
-    
-    .me-info{
-      grid-column-start:4;
-      grid-column-end: 30;
-      margin-top: var(--24px);
-    }
- 
 }
 #profile {
   display: flex;
@@ -455,10 +431,6 @@ footer p {
   }
   article {
     font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-containers,
   .contact-info-upper-container,
