@@ -456,6 +456,7 @@ footer p {
   }
   .section__text__p2 {
     font-size: 1.25rem;
+    
   }
   .title {
     font-size: 2rem;
@@ -466,4 +467,5 @@ footer p {
   .about-pic{
     margin-bottom: 10px;
   }
+ 
 }
