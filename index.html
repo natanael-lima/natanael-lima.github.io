@@ -46,7 +46,7 @@
         <nav class="nav-underline">
           <ul class="nav col-12 col-lg-auto me-lg-auto mt-1 justify-content-center mb-md-0">
             <img src="./img/logo-ico2.ico" alt="Bootstrap" width="40" height="40">
-            <li><a href="#about" class="nav-link px-2" data-i18n="about">Sobre Mi</a></li>
+            <li><a href="#about" class="nav-link px-2" data-i18n="about">Sobre Mí</a></li>
             <li><a href="#projects" class="nav-link px-2" data-i18n="projects">Proyectos</a></li>
             <li><a href="#contact" class="nav-link px-2" data-i18n="contact">Contacto</a></li>
           </ul>
@@ -106,10 +106,10 @@
             </div>
             <div class="col-md-8">
               <div class="h-100 p-5 bg-body rounded-2 shadow-sm">
-                <div class="d-flex pt-3">
+                <div class="d-flex pt-4">
                   
-                  <p class="pb-3 mb-0 small lh-sm" data-i18n="descriptionaboutme">
-                      <strong class="d-block " data-i18n="descriptiontitle">🖐¡Hola! Soy Analista Programador Universitario de Jujuy, Argentina.</strong>
+                  <p class="pb-3 mb-0 small lh-sm " data-i18n="descriptionaboutme">
+                      🖐¡Hola! Soy Analista Programador Universitario de Jujuy, Argentina.
                       Con conocimiento en desarrollo de aplicaciones web y aplicaciones desktop y organización de datos. 
                       Mi destreza como desarrollador se refleja en la implementación desoluciones prácticas y eficientes 
                       a través de la codificación en diferentes lenguajes como Java, C# y frameworks como Spring Boot, .Net. Soy responsable, organizado y disfruto
@@ -421,8 +421,8 @@
                 </button>
               </div>
 
-              <p class="lead border-bottom m-2 text-center">Desktop Application</p>
-              <h6 class="text-center" data-i18n="card1title">Gestion de Estacionamiento</h6>
+              <p class="lead border-bottom m-2 text-center" data-i18n="desktopapp">Aplicacion de Escritorio</p>
+              <h6 class="text-center" data-i18n="card1title">Sistema de Gestión de Estacionamiento</h6>
               <div class="card-content-text">
                   <div class="text-center">
                           <a href="https://github.com/natanael-lima/ProyectoSistemaEstacionamiento.git" style="text-decoration: none;">
@@ -439,18 +439,18 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="infocard">Informacion</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
 
-                            <h6>Descripcion</h6>
-                            <p>Sistema de gestión para una playa de estacionamiento que cuenta con múltiples zonas y sectores. 
+                            <h6 data-i18n="descriptioncard">Descripción</h6>
+                            <p data-i18n="card1content">Sistema de gestión para una playa de estacionamiento que cuenta con múltiples zonas y sectores. 
                               El sistema permite el registro de entrada y salida de vehículos, generación de tickets, 
                               gestión de clientes, tipos de vehículos y usuarios. Además, permite visualizar sectores 
                               ocupados y libres, generar reportes de ventas y realizar diversas operaciones administrativas. 
                               </p>
-                            <h6>Tecnologias</h6>
+                            <h6 data-i18n="tecnocard">Tecnologias</h6>
                             <span class="badge rounded-pill text-bg-dark ">C#</span>
                             <span class="badge rounded-pill text-bg-dark">WPF</span>
                             <span class="badge rounded-pill text-bg-dark">.NET</span>
@@ -471,7 +471,7 @@
               <img src="./img/plantilla2.png" alt="Imagen de la tarjeta 2">
 
               <p class="lead border-bottom m-2 text-center">API Rest</p>
-              <h6 class="text-center" data-i18n="card1title">Gestion de Turnos Clínica</h6>
+              <h6 class="text-center" data-i18n="card2title">Sistema de Gestión de Turnos Clínica</h6>
             
               <div class="card-content-text">
                       <div class="text-center">
@@ -491,18 +491,18 @@
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion</h1>
+                          <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="infocard">Informacion</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <h6>Descripcion</h6>
-                          <p>Sistema de gestión de turnos para una clínica oftalmológica. Permite registrar pacientes, 
+                          <h6 data-i18n="descriptioncard">Descripcion</h6>
+                          <p data-i18n="card2content">Sistema de gestión de turnos para una clínica oftalmológica. Permite registrar pacientes, 
                             médicos y obras sociales. Gestiona la asignación de turnos a pacientes con un médico determinado, 
                             validando que no se superpongan horarios. Envía notificaciones por correo electrónico en formato 
                             HTML al médico y paciente con los detalles del turno asignado. Implementa una API REST para 
                             operaciones CRUD sobre pacientes, médicos y turnos. Desarrollado siguiendo buenas prácticas con 
                             patrones de diseño como Service Layer, DTO y DI, además de pruebas unitarias.</p>
-                          <h6>Tecnologias</h6>
+                          <h6 data-i18n="tecnocard">Tecnologias</h6>
                           <span class="badge rounded-pill text-bg-dark">Java</span>
                           <span class="badge rounded-pill text-bg-dark">Spring Boot</span>
                           <span class="badge rounded-pill text-bg-dark">Maven</span>
@@ -525,8 +525,8 @@
             </div>
             <div class="card">
               <img src="./img/plantilla3.png" alt="Imagen de la tarjeta 3">
-              <p class="lead border-bottom m-2 text-center">Desktop Application</p>
-              <h6 class="text-center" data-i18n="card1title">Gestion de Optica</h6>
+              <p class="lead border-bottom m-2 text-center" data-i18n="desktopapp">Aplicacion de Escritorio</p>
+              <h6 class="text-center" data-i18n="card3title">Sistema de Gestión de Optica</h6>
               <div class="card-content-text">
                   <div class="text-center">
                       <a href="https://github.com/natanael-lima/ProyectoSistemaOptica.git" style="text-decoration: none;">
@@ -544,19 +544,19 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="infocard">Informacion</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <h6>Descripcion</h6>
-                            <p>Sistema de gestión de ventas desarrollado en Windows Forms para una óptica. Permite 
+                            <h6 data-i18n="descriptioncard">Descripcion</h6>
+                            <p data-i18n="card3content">Sistema de gestión de ventas desarrollado en Windows Forms para una óptica. Permite 
                               la administración completa de clientes, productos, obras sociales, usuarios y ventas. 
                               Cuenta con módulos para el alta, baja, modificación y consultas de clientes, productos 
                               y usuarios. Gestiona la emisión de ventas, registrando los detalles de productos vendidos, 
                               precios, cantidades y totales. Brinda funcionalidades adicionales como listados de ventas 
                               por cliente o rango de fechas, listados de productos vendidos por cliente o rango de fechas,
                                y listado de clientes por obra social.</p>
-                            <h6>Tecnologias</h6>
+                            <h6 data-i18n="tecnocard">Tecnologias</h6>
                             <span class="badge rounded-pill text-bg-dark">C#</span>
                             <span class="badge rounded-pill text-bg-dark">Windows Form</span>
                             <span class="badge rounded-pill text-bg-dark">.NET Framework</span>
@@ -576,8 +576,8 @@
             <div class="card">
               <img src="./img/plantilla4.png" alt="Imagen de la tarjeta 4">
         
-              <p class="lead border-bottom m-2 text-center">Web Application</p>
-              <h6 class="text-center" data-i18n="card1title">Sistema de Postulaciones</h6>
+              <p class="lead border-bottom m-2 text-center"data-i18n="webapp">Aplicacion Web</p>
+              <h6 class="text-center" data-i18n="card4title">Sistema de Gestión de Postulaciones</h6>
               <div class="card-content-text">
                      <div class="text-center">
                         <a href="https://github.com/natanael-lima/ProyectoSistemaPostulaciones.git" style="text-decoration: none;">
@@ -600,19 +600,19 @@
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="infocard">Informacion</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              <h6>Descripcion</h6>
-                              <p>Sistema web para la autogestión de postulaciones a ofertas laborales en una empresa. 
+                              <h6 data-i18n="descriptioncard">Descripcion</h6>
+                              <p data-i18n="card4content">Sistema web para la autogestión de postulaciones a ofertas laborales en una empresa. 
                                 Permite la publicación de ofertas laborales asociadas a diferentes sectores. 
                                 Los usuarios visitantes pueden  registrarse y postularse a las ofertas disponibles, 
                                 cargando una ficha de datos personales y documentación digital requerida. Los postulantes
                                  registrados pueden ver el seguimiento del estado de sus postulaciones. Cuenta con un
                                  módulo administrativo donde el personal de reclutamiento puede visualizar las postulaciones
                                   recibidas y aceptar o rechazar candidatos.</p>
-                              <h6>Tecnologias</h6>
+                              <h6 data-i18n="tecnocard">Tecnologias</h6>
                               <span class="badge rounded-pill text-bg-dark">Java</span>
                               <span class="badge rounded-pill text-bg-dark">Spring Boot</span>
                               <span class="badge rounded-pill text-bg-dark">Thymeleaf</span>
@@ -632,8 +632,8 @@
             </div>
             <div class="card">
               <img src="./img/plantilla5.png" alt="Imagen de la tarjeta 5">
-              <p class="lead border-bottom m-2 text-center">Web Application</p>
-              <h6 class="text-center" data-i18n="card1title">Sistema Integral de Venta</h6>
+              <p class="lead border-bottom m-2 text-center" data-i18n="webapp">Aplicacion Web</p>
+              <h6 class="text-center" data-i18n="card5title">Sistema Integral de Venta</h6>
               <div class="card-content-text">
                   <div class="text-center">
                         <a href="https://github.com/natanael-lima/ProyectoGestionEmpresa.git" style="text-decoration: none;">
@@ -656,12 +656,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="infocard">Informacion</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                                <h6>Descripcion</h6>
-                                <p>Este sistema integral de venta y administración de productos está diseñado 
+                                <h6 data-i18n="descriptioncard">Descripcion</h6>
+                                <p data-i18n="card5content">Este sistema integral de venta y administración de productos está diseñado 
                                   específicamente para negocios que se dedican a la venta de modelos a escala 
                                   de coches clásicos. Utilizando la base de datos `classicmodels`, el sistema
                                    ofrece funcionalidades para gestionar clientes, productos y pedidos de venta. 
@@ -672,7 +672,7 @@
                                       de venta y gestionar el inventario, mientras que los administradores tienen acceso 
                                       completo para administrar usuarios, productos y configuraciones del sistema.</p>
 
-                                <h6>Tecnologias</h6>
+                                <h6 data-i18n="tecnocard">Tecnologias</h6>
                                 <span class="badge rounded-pill text-bg-dark">Java</span>
                                 <span class="badge rounded-pill text-bg-dark">Spring Boot</span>
                                 <span class="badge rounded-pill text-bg-dark">Spring Data</span>
@@ -693,8 +693,8 @@
             </div>
             <div class="card">
               <img src="./img/plantilla6.png" alt="Imagen de la tarjeta 6">
-              <p class="lead border-bottom m-2 text-center">Web Application</p>
-              <h6 class="text-center" data-i18n="card1title">Gestor de Eventos</h6>
+              <p class="lead border-bottom m-2 text-center" data-i18n="webapp">Aplicacion Web</p>
+              <h6 class="text-center" data-i18n="card6title">Sistema Gestor de Eventos</h6>
               <div class="card-content-text">
                 <div class="text-center">
                     <a href="https://github.com/maxi1103/TpFinal-PySW-2022.git" style="text-decoration: none;">
@@ -716,17 +716,17 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Technologies</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="infocard">Informacion</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <h6>Descripcion</h6>
-                            <p>Sistema web para la gestión integral de reuniones empresariales. Permite a los 
+                            <h6 data-i18n="descriptioncard">Descripcion</h6>
+                            <p data-i18n="card6content">Sistema web para la gestión integral de reuniones empresariales. Permite a los 
                               usuarios administradores programar y gestionar reuniones, controlar la asistencia 
                               de participantes, y generar informes detallados. Los participantes pueden visualizar
                                su agenda de reuniones, acceder a detalles de las mismas, y realizar búsquedas avanzadas.
                                 La aplicación proporciona una interfaz intuitiva y amigable para una experiencia de usuario óptima.</p>
-                            <h6>Tecnologias</h6>
+                            <h6 data-i18n="tecnocard">Tecnologias</h6>
                               <span class="badge rounded-pill text-bg-dark">HTML</span>
                               <span class="badge rounded-pill text-bg-dark">CSS</span>
                               <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
@@ -747,8 +747,8 @@
             </div>
             <div class="card">
               <img src="./img/plantilla7.png" alt="Imagen de la tarjeta 7">
-              <p class="lead border-bottom m-2 text-center">Web Application</p>
-              <h6 class="text-center" data-i18n="card1title">Lovely App</h6>
+              <p class="lead border-bottom m-2 text-center" data-i18n="webapp">Aplicacion Web</p>
+              <h6 class="text-center" data-i18n="card7title">Aplicación de Citas Lovely</h6>
               <div class="card-content-text">
                 <div class="text-center">
                     <a href="https://github.com/natanael-lima/ProyectLovelyApp.git" style="text-decoration: none;">
@@ -771,19 +771,19 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="infocard">Informacion</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <h6>Tecnologias</h6>
-                            <p>Proyecto LovelyApp aplicación de citas, similar a Tinder, permite a los usuarios 
+                            <h6 data-i18n="descriptioncard">Descripción</h6>
+                            <p data-i18n="card7content">Proyecto LovelyApp aplicación de citas, similar a Tinder, permite a los usuarios 
                               registrarse y crear perfiles detallados. Con un buscador integrado, los usuarios
                                pueden encontrar coincidencias basadas en preferencias configuradas. Una vez 
                                emparejados, pueden chatear en tiempo real utilizando WebSocket. La función de 
                                match mutuo desencadena conversaciones significativas. Además, los usuarios 
                                pueden editar perfiles, cambiar preferencias y acceder a opciones de seguridad 
                                en la sección de perfil. LovelyApp proporciona una plataforma intuitiva y segura.</p>
-                            <h6>Tecnologias</h6>
+                            <h6 data-i18n="tecnocard">Tecnologias</h6>
                             <span class="badge rounded-pill text-bg-dark">Java</span>
                             <span class="badge rounded-pill text-bg-dark">Angular 17</span>
                             <span class="badge rounded-pill text-bg-dark">API REST</span>
@@ -808,8 +808,8 @@
       </section>
       <!--CONTACTO-->
       <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section__text__p1" data-i18n="setion3">Ponerse en contacto</p>
+        <h1 class="title" data-i18n="setion3title">Contáctame</h1>
         <div class="col-lg-12 col-md-4 mt-4">
           <div class="h-100 p-4 bg-body rounded-2 shadow-sm">
             <div class="contact-form">
@@ -817,8 +817,8 @@
               <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
                 action="https://formspree.io/f/xdoqkzzk" method="post">
                 <div class="form-group mt-3">
-                  <label for="full-name ">Full Name</label>
-                  <input type="text" class="form-control" name="name" id="full-name" required placeholder="Miguel Black"
+                  <label for="full-name" data-i18n="contactname">Nombre Completo</label>
+                  <input type="text" class="form-control" name="name" id="full-name" required placeholder="Miguel White"
                     required="">
                 </div>
                 <div class="form-group mt-3">
@@ -827,13 +827,13 @@
                     placeholder="name@example.com" required="">
                 </div>
                 <div class="form-group mt-3">
-                  <label for="message">Message</label>
+                  <label for="message" data-i18n="contactmjs">Mensaje</label>
                   <textarea class="form-control" rows="5" name="message" id="message" placeholder="Comments"
                     required=""></textarea>
                 </div>
                 <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 <div class="d-grid gap-2 mt-2">
-                  <button class="rounded-5 btn-color-3 p-1" type="submit" class=" btn-lg">Send</button>
+                  <button class="rounded-5 btn-color-3 p-1" type="submit" class=" btn-lg" data-i18n="contactsend">Enviar</button>
                 </div>
               </form>
             </div>
