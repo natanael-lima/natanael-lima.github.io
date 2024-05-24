@@ -30,6 +30,34 @@ body {
 }
 
 /* BUTTONS */
+
+/* Estilo para el color activo */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: black !important; /* Cambia "your-desired-color" al color deseado */
+  color:white !important; /* Cambia "your-text-color" al color deseado para el texto */
+}
+
+
+.language-buttons {
+  position: fixed;
+  top: 20px; /* Ajusta la posición vertical según tus necesidades */
+  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+@media (max-width: 767.98px) {
+  .language-buttons {
+    top: 35px; /* Ajusta la posición vertical para dispositivos móviles */
+  }
+}
+.bg-custom-btn{
+  
+  background-color: #e6a078; /* Cambia el color de fondo a azul */
+  border-color: #43a759; /* Cambia el color del borde a azul */
+}
+
+
 .btn-container {
   display: flex;
   justify-content: center;
