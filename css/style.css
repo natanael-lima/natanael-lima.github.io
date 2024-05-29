@@ -349,7 +349,7 @@ section {
 }
 
 .card:hover img {
-  transform: scale(1.08); /* Efecto de zoom al pasar el cursor */
+  transform: scale(1.04); /* Efecto de zoom al pasar el cursor */
   /*filter: blur(2px);  Ajusta el valor para cambiar la intensidad del desenfoque */
 }
 
