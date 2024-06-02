@@ -13,7 +13,7 @@ html{
 body {
     font-family: Poppins;
     scroll-behavior: smooth;
-    background: linear-gradient(90deg, #eefaf4 0%, #fafff5 16%, #eefffa 50%, #f3ffff 83%, #eefaf4 100%);
+    background: linear-gradient(90deg, #eefff6 0%, #f7ffef 16%, #e9fff8 50%, #ecfcfc 83%, #eefff6 100%);
     background-size: 300% 300%;
     animation: toggle 5s infinite;
     background-color: #031C06;
@@ -30,6 +30,43 @@ body {
 }
 
 /* BUTTONS */
+
+/* Estilo para el color activo */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: black !important; /* Cambia "your-desired-color" al color deseado */
+  color:white !important; /* Cambia "your-text-color" al color deseado para el texto */
+}
+
+
+.language-buttons {
+  position: fixed;
+  top: 20px; /* Ajusta la posición vertical según tus necesidades */
+  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+@media (max-width: 767.98px) {
+  .language-buttons {
+    top: 35px; /* Ajusta la posición vertical para dispositivos móviles */
+  }
+}
+
+.btn-send{
+  font-weight: 100;
+  transition: all 400ms ease;
+  padding: 0.5rem;
+  width: 15rem;
+  border-radius: 3rem;
+  font-weight: 500;
+}
+.bg-custom-btn{
+  
+  background-color: #e6a078; /* Cambia el color de fondo a azul */
+  border-color: #43a759; /* Cambia el color del borde a azul */
+}
+
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -321,7 +358,7 @@ section {
 }
 
 .card:hover img {
-  transform: scale(1.08); /* Efecto de zoom al pasar el cursor */
+  transform: scale(1.04); /* Efecto de zoom al pasar el cursor */
   /*filter: blur(2px);  Ajusta el valor para cambiar la intensidad del desenfoque */
 }
 
