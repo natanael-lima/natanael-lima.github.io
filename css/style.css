@@ -13,7 +13,7 @@ html{
 body {
     font-family: Poppins;
     scroll-behavior: smooth;
-    background: linear-gradient(90deg, #eefaf4 0%, #fafff5 16%, #eefffa 50%, #f3ffff 83%, #eefaf4 100%);
+    background: linear-gradient(90deg, #eefff6 0%, #f7ffef 16%, #e9fff8 50%, #ecfcfc 83%, #eefff6 100%);
     background-size: 300% 300%;
     animation: toggle 5s infinite;
     background-color: #031C06;
@@ -50,6 +50,15 @@ body {
   .language-buttons {
     top: 35px; /* Ajusta la posición vertical para dispositivos móviles */
   }
+}
+
+.btn-send{
+  font-weight: 100;
+  transition: all 400ms ease;
+  padding: 0.5rem;
+  width: 15rem;
+  border-radius: 3rem;
+  font-weight: 500;
 }
 .bg-custom-btn{
   
