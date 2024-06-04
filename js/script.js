@@ -123,14 +123,25 @@ const texts = {
 	  // Agrega más texto en español según sea necesario
 	}
   };
-
+  
   function changeLanguage(lang) {
 	const elements = document.querySelectorAll('[data-i18n]');
 	elements.forEach(element => {
 	  const key = element.getAttribute('data-i18n');
 	  element.textContent = texts[lang][key];
 	});
+	const downloadButton = document.getElementById('downloadButton');
+    if (lang === 'en') {
+        downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
+    } else if (lang === 'es') {
+        downloadButton.setAttribute('onclick', "window.open('./img/CURRICULUM-VITAE.pdf')");
+    } else {
+        // Establecer un valor predeterminado para el botón en caso de que el idioma no esté definido
+        downloadButton.setAttribute('onclick', "window.open('./img/CURRICULUM-VITAE.pdf')");
+    }
   }
-	
+
+  changeLanguage('es');
+
 
 
