@@ -45,12 +45,13 @@ const texts = {
 	  'projects': 'Projects',
 	  'contact': 'Contact',
 	  'saludo': 'Hello, I am',
+	  'yosoy': 'Software Developer',
 	  'download': 'Download CV',
 	  'contactinfo': 'Contact Info',
 	  'section1': 'Get To Know More',
 	  'section1title1': 'About Me',
 	  'section1title2': 'Skills',
-	  'descriptiontitle': '🖐¡Hi! I am Computer Programming and Analysis from Jujuy, Argentina.',
+	  'descriptiontitle': '🖐¡Hi! I am Programmer Analyst from Jujuy, Argentina.',
 	  'descriptionaboutme': '🖐¡Hi! I am University Degree in Computer Programming and Analysis from Jujuy, Argentina. With knowledge in developing web applications and desktop applications and data organization. My skill as a developer is reflected in the implementation of practical and efficient solutions. through coding in different languages ​​such as Java, C# and frameworks such as Spring Boot, .Net and Angular. I am responsible, organized and enjoy work as a team to achieve project objectives. As a passionate software developer, I am excited to contribute to the world of technology.',
 	  'setion2': 'Browse My Recent',
 	  'setion2title': 'Projects',
@@ -84,7 +85,8 @@ const texts = {
 	  'about': 'Sobre Mí',
 	  'projects': 'Proyectos',
 	  'contact': 'Contacto',
-	  'saludo': 'Hola, Yo Soy',
+	  'saludo': 'Hola, Yo soy',
+	  'yosoy': 'Desarrollador de software',
 	  'download': 'Descargar CV',
 	  'contactinfo': 'Contactar',
 	  'section1': 'Conozca más',
@@ -134,10 +136,10 @@ const texts = {
     if (lang === 'en') {
         downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
     } else if (lang === 'es') {
-        downloadButton.setAttribute('onclick', "window.open('./img/CURRICULUM-VITAE.pdf')");
+        downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
     } else {
         // Establecer un valor predeterminado para el botón en caso de que el idioma no esté definido
-        downloadButton.setAttribute('onclick', "window.open('./img/CURRICULUM-VITAE.pdf')");
+        downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
     }
   }
 
