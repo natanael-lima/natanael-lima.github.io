@@ -97,7 +97,7 @@ const texts = {
 	  'setion2': 'Explorar mis recientes',
 	  'setion2title': 'Proyectos',
 	  'desktopapp': 'Desarrollo de Escritorio',
-	  'webapp': 'Desarrollo web',
+	  'webapp': 'Desarrollo Web',
 	  'infocard': 'Información',
 	  'card1title': 'Sistema de Gestión de Estacionamiento',
 	  'card2title': 'Sistema de Gestión de Turnos Clínicos',
