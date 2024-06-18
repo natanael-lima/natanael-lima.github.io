@@ -52,7 +52,7 @@ const texts = {
 	  'section1title1': 'About Me',
 	  'section1title2': 'Skills',
 	  'descriptiontitle': '🖐¡Hi! I am Programmer Analyst from Jujuy, Argentina.',
-	  'descriptionaboutme': '🖐¡Hi! I am University Programmer Analyst from Jujuy, Argentina. With knowledge in developing web applications and desktop applications and data organization. My skill as a developer is reflected in the implementation of practical and efficient solutions. through coding in different languages ​​such as Java, C# and frameworks such as Spring Boot, .Net and Angular. I am responsible, organized and enjoy work as a team to achieve project objectives. As a passionate software developer, I am excited to contribute to the world of technology.',
+	  'descriptionaboutme': '🖐¡Hi! I am Programmer Analyst from Jujuy, Argentina. With knowledge in developing web applications and desktop applications and data organization. My skill as a developer is reflected in the implementation of practical and efficient solutions. through coding in different languages ​​such as Java, C# and frameworks such as Spring Boot, .Net and Angular. I am responsible, organized and enjoy work as a team to achieve project objectives. As a passionate software developer, I am excited to contribute to the world of technology.',
 	  'setion2': 'Browse My Recent',
 	  'setion2title': 'Projects',
 	  'desktopapp': 'Desktop Development',
