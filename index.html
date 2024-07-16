@@ -795,30 +795,31 @@
           <div class="h-100 p-4 bg-body rounded-2 shadow-sm">
             <div class="contact-form">
               <!-- Formulario con atributo action de Formspree -->
-              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoqkzzk" method="post">
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                action="https://formspree.io/f/xdoqkzzk" method="post">
                 <div class="form-group mt-3">
                   <label for="full-name" data-i18n="contactname">Nombre Completo</label>
-                  <input type="text" class="form-control" name="name" id="full-name" required="" placeholder="Miguel White">
+                  <input type="text" class="form-control" name="name" id="full-name" required placeholder="Miguel White"
+                    required="">
                 </div>
                 <div class="form-group mt-3">
                   <label for="email-address">Email</label>
-                  <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="name@example.com" required="">
+                  <input type="email" class="form-control" name="_replyto" id="email-address"
+                    placeholder="name@example.com" required="">
                 </div>
                 <div class="form-group mt-3">
                   <label for="message" data-i18n="contactmjs">Mensaje</label>
-                  <textarea class="form-control" rows="5" name="message" id="message" placeholder="Comments" required=""></textarea>
+                  <textarea class="form-control" rows="5" name="message" id="message" placeholder="Comments"
+                    required=""></textarea>
                 </div>
                 <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 <div class="d-grid gap-2 mt-2 justify-content-center">
-                  <button class="rounded-5 btn-color-1 btn-send" type="submit" data-i18n="contactsend" disabled="">Enviar</button>
+                  <button class="rounded-5 btn-color-1 btn-send" type="submit" data-i18n="contactsend" disabled>Enviar</button>
                 </div>
               </form>
             </div>
           </div>
-
-
         </div>
-
       </section>
       <footer class="pt-3 mt-4 text-muted border-top">
         <p>Copyright &#169; 2024 Natanael Lima.</p>
