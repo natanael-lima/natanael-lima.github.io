@@ -44,7 +44,7 @@ const texts = {
 	  'about': 'About Me',
 	  'projects': 'Projects',
 	  'contact': 'Contact',
-	  'saludo': 'Hello, I am',
+	  'saludo': '¡Hi! I Am',
 	  'yosoy': 'Software Developer',
 	  'download': 'Download CV',
 	  'contactinfo': 'Contact Info',
@@ -85,7 +85,7 @@ const texts = {
 	  'about': 'Sobre Mí',
 	  'projects': 'Proyectos',
 	  'contact': 'Contacto',
-	  'saludo': 'Hola, Yo soy',
+	  'saludo': '¡Hola! Soy',
 	  'yosoy': 'Desarrollador de software',
 	  'download': 'Descargar CV',
 	  'contactinfo': 'Contactar',
@@ -146,4 +146,49 @@ const texts = {
   changeLanguage('es');
 
 
+document.addEventListener('DOMContentLoaded', function () {
+	const toggleButton = document.getElementById('toggleButton');
+	const lightMode = document.getElementById('lightMode');
+	const darkMode = document.getElementById('darkMode');
+	const darkIcon = document.getElementById('dark-icon');
+	const lightIcon = document.getElementById('light-icon');
+	// Referencia al contenedor de la navbar
+	const nav = document.querySelector('nav');
+  
+	// Función para cambiar entre modos
+	function switchMode(isLightMode) {
+	  if (isLightMode) {
+		darkIcon.style.display = 'none';
+		lightIcon.style.display = 'block';
+		document.body.classList.add('light-mode');
+		document.body.classList.remove('dark-mode');
+		nav.classList.add('nav-underline'); // Agregar clase para modo claro
+		nav.classList.remove('nav-underline-dark'); // Eliminar clase para modo oscuro
+	  } else {
+		darkIcon.style.display = 'block';
+		lightIcon.style.display = 'none';
+		document.body.classList.add('dark-mode');
+		document.body.classList.remove('light-mode');
+		nav.classList.add('nav-underline-dark'); // Agregar clase para modo oscuro
+      	nav.classList.remove('nav-underline'); // Eliminar clase para modo claro
+	  }
+	}
+  
+	// Event listeners para los enlaces del menú
+	lightMode.addEventListener('click', function () {
+	  switchMode(true);
+	  document.getElementById('darkIcon').classList.remove('active');
+	  document.getElementById('lightIcon').classList.add('active');
+	});
+  
+	darkMode.addEventListener('click', function () {
+	  switchMode(false);
+	  document.getElementById('lightIcon').classList.remove('active');
+	  document.getElementById('darkIcon').classList.add('active');
+	});
+  
+	// Inicializar en modo oscuro
+	switchMode(true);
+  });
+  
 
