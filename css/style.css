@@ -11,16 +11,31 @@
 html{
   scroll-behavior: smooth;
 }
+/* BODY */
+/* Estilo común para el cuerpo */
 body {
-    font-family: Poppins;
-    scroll-behavior: smooth;
-    background: linear-gradient(90deg, #eefff6 0%, #f7ffef 16%, #e9fff8 50%, #ecfcfc 83%, #eefff6 100%);
-    background-size: 300% 300%;
-    animation: toggle 5s infinite;
-    background-color: #031C06;
-  }
+  font-family: Poppins;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s, color 0.5s;
+}
 
-/*GRADIANTE ANIMADO*/
+/* Estilo para el modo claro */
+body.light-mode {
+  background: linear-gradient(90deg, #eefff6 0%, #f7ffef 16%, #e9fff8 50%, #ecfcfc 83%, #eefff6 100%);
+  background-size: 400% 400%;
+  animation: toggle 4s infinite;
+  background-color: #ffffff; /* Puedes ajustar el color de fondo si es necesario */
+  color: #000000; /* Color del texto en modo claro */
+}
+
+/* Estilo para el modo oscuro */
+body.dark-mode {
+  background: radial-gradient(ellipse, #132018 0%, #121d14 16%, #12201c 50%, #0e2422 83%, #132018 100%);
+  background-size: 150% 150%;
+  animation: toggle 4s infinite;
+  color: #ffffff; /* Color del texto en modo oscuro */
+}
+
 @keyframes toggle {
   from{
     background-position: 0% 50%;
@@ -31,15 +46,31 @@ body {
 }
 
 /* BUTTONS */
-
+.dropdown-menu {
+  min-width: 5rem!important;
+}
 /* Estilo para el color activo */
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
   background-color: black !important; /* Cambia "your-desired-color" al color deseado */
   color:white !important; /* Cambia "your-text-color" al color deseado para el texto */
 }
+.dropdown-custom .nav-link{
+  color: #000!important;
+  padding-top: .2rem !important; 
+  padding-bottom: .2rem !important;
+}
 
+.dropdown-custom .nav-link:hover{
+  color: #5dac7e!important;
+}
 
+.btn-language{
+  border-radius: 15%;
+  background-color: #5dac7e;
+  border: none;
+  color: #fff;
+}
 .language-buttons {
   position: fixed;
   top: 20px; /* Ajusta la posición vertical según tus necesidades */
@@ -47,25 +78,6 @@ body {
   z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 
-@media (max-width: 767.98px) {
-  .language-buttons {
-    top: 35px; /* Ajusta la posición vertical para dispositivos móviles */
-  }
-}
-
-.btn-send{
-  font-weight: 100;
-  transition: all 400ms ease;
-  padding: 0.5rem;
-  width: 15rem;
-  border-radius: 3rem;
-  font-weight: 500;
-}
-.bg-custom-btn{
-  
-  background-color: #e6a078; /* Cambia el color de fondo a azul */
-  border-color: #43a759; /* Cambia el color del borde a azul */
-}
 
 
 .btn-container {
@@ -82,129 +94,234 @@ body {
   border-radius: 3rem;
   font-weight: 500;
 }
-.btn-color-0{
-  border: #2fcc71 0.1rem solid;
-}
-.btn-color-1{
-  border: #000000 0.1rem solid;
-}
-.btn-color-2 {
-  border: #2fcc71 0.1rem solid;
-  color: #2fcc71;
-}
-.btn-color-3 {
-  border: #000 0.1rem solid;
-  color: #000;
-}
-.btn-color-0:hover,
-.btn-color-1:hover,
-.btn-color-2:hover,
-.btn-color-3:hover{
+
+/* Estilos generales para botones */
+.btn-color-0,
+.btn-color-1 {
+  border: 0.1rem solid; /* Bordes definidos para todos los botones */
   cursor: pointer;
+  transition: background 0.3s, border 0.3s; /* Transiciones suaves para hover */
 }
 
-.btn-color-0
-{
-  background: #2fcc71;
+/* Modo Claro */
+.light-mode .btn-color-0 {
+  background: #2abb66;
+  border-color: #2abb66;
   color: white;
-  border: #2fcc71 0.1rem solid;
 }
 
-.btn-color-1
-{
-  background: #000000;
-  color: white;
-  border: #000000 0.1rem solid;
-}
-.btn-color-2 {
-  background: none;
+.light-mode .btn-color-0:hover {
+  background: #23a057;
+  border-color: #23a057;
 }
 
-.btn-color-3
-{
- background: none;
+.light-mode .btn-color-1 {
+  background: #0b0f0d;
+  border-color: #0b0f0d;
+  color: #f0fff6;
 }
 
-.btn-color-0:hover {
-  background: #29b362;
-  border: #29b362 0.1rem solid;
+.light-mode .btn-color-1:hover {
+  background: #2abb66;
+  border-color: #2abb66;
+  color:#e2ece6;
 }
-.btn-color-1:hover {
-  background: #2fcc71;
-  border: #2fcc71 0.1rem solid;
-}
-.btn-color-2:hover {
-  border: #2fcc71 0.1rem solid;
-  background: #2fcc71;
+
+/* Modo Oscuro */
+.dark-mode .btn-color-0 {
+  background: #2abb66;
+  border-color: #2abb66;
   color: white;
 }
-.btn-color-3:hover {
-  border: #000 0.1rem solid;
-  background: #000;
-  color: white;
+
+.dark-mode .btn-color-0:hover {
+  background: #23a057;
+  border-color: #23a057;
 }
-.btn-container {
+
+.dark-mode .btn-color-1 {
+  background: #e7fff1;
+  border-color: #e7fff1;
+  color:#638b73;
+}
+
+.dark-mode .btn-color-1:hover {
+  background: #2abb66;
+  border-color: #2abb66;
+  color:#d7ffe7;
+}
+
+/* Estilos para el socials*/
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
   gap: 1rem;
 }
 
+.socials-profile {
+  padding: 10px; 
+  text-decoration: none; 
+  margin-bottom: 100px;
+  transition: color 0.5s;
+}
+
+/* Modo Claro */
+.light-mode .socials-profile {
+  color: #0b0f0d;
+}
+.light-mode .socials-profile:hover{
+  color: #2abb66;
+  transform: scale(1.1);
+}
+
+/* Modo Oscuro */
+.dark-mode .socials-profile {
+  color: #e7fff1;
+}
+.dark-mode .socials-profile:hover{
+  color: #2abb66;
+  transform: scale(1.1);
+}
+
+/* Button ENVIAR */
+.btn-send{
+  font-weight: 100;
+  transition: all 400ms ease;
+  padding: 0.5rem;
+  width: 15rem;
+  border-radius: 3rem;
+  font-weight: 500;
+}
+
+
 /* FILTER BOTON */
-.filter-content{
+/* Estilos para el filtro en general */
+.filter-content {
   margin: 2rem auto 2.5rem; /* Ajusta el margen para centrar verticalmente */
   max-width: 300px; /* Establece el ancho máximo */
-  background-color: #d9f0e5;
   padding: .375rem;
   border-radius: 3rem;
   display: flex;
   justify-content: space-between;
-  column-gap:0.5rem;
+  column-gap: 0.5rem;
 }
-.filter-btn{
+
+/* Botones del filtro */
+.filter-btn {
   width: 100%;
   border: none;
   outline: none;
   padding: 1rem;
-  color: #313131;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 3rem;
   cursor: pointer;
   background-color: transparent;
-  transition:.3s;
+  transition: .3s;
 }
-.filter-btn:hover{
+
+/* Estilos para el modo claro */
+.light-mode .filter-content {
+  background-color: #69c2964b; /* Color de fondo para el modo claro */
+}
+
+.light-mode .filter-btn {
+  color: #242424;
+  background-color: transparent;
+}
+
+.light-mode .filter-btn:hover {
   background-color: #f4fcf8;
 }
 
-/* Estilo para el botón activado */
-.filter-btn:active,
-.filter-btn.active {
-  background-color: #f4fcf8; /* Cambia el color de fondo */
+.light-mode .filter-btn:active,
+.light-mode .filter-btn.active {
+  background-color: #f4fcf8b6;
+  color: #242424;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode .filter-content {
+  background-color: #69c2964b; /* Color de fondo para el modo oscuro */
+}
+
+.dark-mode .filter-btn {
+  color: #f4f4f4;
+  background-color: transparent;
+}
+
+.dark-mode .filter-btn:hover {
+  background-color: #769e7f;
+}
+
+.dark-mode .filter-btn:active,
+.dark-mode .filter-btn.active {
+  background-color: #698870;
+  color: #f4f4f4;
 }
 
 /* NAVEGADOR */
 header{
+  /*top: 0;
+  left: 35%;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0px 100px;
   opacity: 0.97;
+  position: fixed; 
+  background-color: rgba(255, 234, 234, 0.5);
+  border-radius: 35px;*/
+  backdrop-filter: blur(5px); /* Aplica el desenfoque al fondo detrás del elemento */
+  z-index: 999;
 }
+
+/* Estilos generales para la navbar en modo claro */
 .nav-underline .nav-link {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: .875rem;
-  color: #242725;
+  color: #242725; /* Color de texto en modo oscuro */
+  transition: color 0.5s;
+  font-weight: 500;
+  border-bottom:none !important;
+}
+
+.nav-underline .nav-link:hover {
+  color: #2fcc71; /* Color de texto al pasar el ratón en modo claro */
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40; /* Color del texto activo en modo claro */
+}
+
+/* Estilos generales para la navbar en modo oscuro */
+.nav-underline-dark .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #e0e0e0; /* Color de texto en modo oscuro */
   transition: color 0.5s;
   font-weight: 500;
 }
-.nav-underline .nav-link:hover {
-  color: #2fcc71;
+
+.nav-underline-dark .nav-link:hover {
+  color: #45db83; /* Color de texto al pasar el ratón en modo oscuro */
 }
-.nav-underline .active {
+
+.nav-underline-dark .active {
   font-weight: 500;
-  color: #343a40;
+  color: #c0c0c0; /* Color del texto activo en modo oscuro */
 }
+
 
 /* SECTIONS */
 section {
   padding-top: 4vh;
-  height: 96vh;
+  /*height: 96vh;*/
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -214,9 +331,8 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
-
-/*FOTO*/
+/* WELCOME SECTION */
+/*Columnas*/
 .me-image {
   grid-column-start: 8;
   grid-column-end: 10;
@@ -232,7 +348,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    /* Estilos para el menú hamburguesa */
+    /* Estilos mobile profile*/
     .me-image{
         grid-column-start: 4;
         grid-column-end: 7;
@@ -253,8 +369,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 300px;
   margin: auto 0;
 }
 
@@ -281,32 +397,11 @@ section {
   text-align: center;
 }
 
-/* SOCIALS */
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-.socials-profile {
-  padding: 10px; 
-  text-decoration: none; 
-  margin-bottom: 100px;
-  color: black;
-  transition: color 0.5s;
-}
-
-.socials-profile:hover{
-  color: #2fcc71;
-  transform: scale(1.05);
-}
-
 /* ABOUT & SKILL SECTION */
-/* ABOUT ME */
+/* Estilos about me */
 #about {
   position: relative;
-  height: 80;
+  /*height: 100vh;*/
 }
 .about-pic {
   border-radius: 1rem;
@@ -317,7 +412,7 @@ section {
   margin: auto 0;
 }
 
-/*SKILLS*/
+/* Estilos skills */
 .toggle-section {
   text-align: center;
 }
@@ -405,23 +500,33 @@ section {
 footer {
   margin: 1 1rem;
 }
-
-footer p {
-  text-align: center;
+footer ul {
+  margin-bottom: 0; /* Elimina el margen por defecto de la lista */
+  font-weight: 400;
 }
 
-.socials-footer {
-  padding: 10px; 
-  text-decoration: none; 
-  color: black;
-  transition: color 0.5s;
+.light-mode footer p {
+  margin-bottom: 0; /* Elimina el margen por defecto del párrafo */
+  color: #8a8a8a; /* Color del texto opcional */
 }
-
-.socials-footer:hover{
-  color: #2fcc71;
-  transform: scale(1.05);
+.dark-mode footer p {
+  margin-bottom: 0; /* Elimina el margen por defecto del párrafo */
+  color: #e1ece5; /* Color del texto opcional */
 }
-
+.light-mode footer a {
+  color: #8a8a8a; /* Color del texto opcional */
+}
+.dark-mode  footer a{
+  color: #d7ffe7; /* Color del texto opcional */
+}
+.light-mode footer a:hover {
+  text-decoration: underline; /* Efecto hover opcional */
+  color: #2abb66;
+}
+.dark-mode footer a:hover {
+  text-decoration: underline; /* Efecto hover opcional */
+  color: #2abb66;
+}
 
 /*VERSIONES MOBILE*/
 
@@ -586,3 +691,115 @@ footer p {
 }
 
 
+/*-------------------border animate*/
+
+.outer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-border-container {
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px; /* Ajusta según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-border-container::before {
+  content: '';
+  position: absolute;
+  top: -400%;
+  left:-400%;
+  bottom:20px ;
+  width:2000px;
+  height: 450px;
+  background: conic-gradient(from 90deg at 16% 25%,#37e27e,#ecfff318,#38e47f);
+  animation: spin 2s linear infinite;
+  z-index: 1;
+  background-size: 300% 200%;
+}
+.animated-border-container::after {
+  filter: blur(10px);
+}
+
+.outer-container:hover {
+  transform: scale(1.02);
+}
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #dcffeb 0%, #d5ffd5 100%);
+  color: #99d49b; /* Texto blanco */
+  border-radius: 25px; /* Ajusta esto según la forma que desees */
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+/*MODE DARK/LIGHT*/
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.btn-dark .visually-hidden {
+  display: inline-block;
+}
+
+.btn-light .visually-hidden {
+  display: inline-block;
+}
+
+#toggleButton svg {
+  display: none;
+}
+#toggleButton svg.active {
+  display: inline;
+}
+
+/* Estilo base para el botón */
+.btn-mode-custom {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para los íconos dentro del botón */
+.btn-mode-custom svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+/* Estilo para el hover en el botón */
+.btn-mode-custom:hover svg {
+  transform: scale(1.3);
+  fill: #2fcc71; /* Color deseado al pasar el cursor */
+}
+
+/* Opcional: Estilo para el estado activo/foco del botón */
+.btn-mode-custom:active svg, 
+.btn-mode-custom:focus svg {
+  outline: none;
+  fill: #239b55; /* Color deseado cuando se hace clic */
+}
