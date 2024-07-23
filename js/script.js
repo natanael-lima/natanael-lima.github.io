@@ -66,7 +66,7 @@ const texts = {
 	  'section1title1': 'About Me',
 	  'section1title2': 'Skills',
 	  'descriptiontitle': '🖐¡Hi! I am Programmer Analyst from Jujuy, Argentina.',
-	  'descriptionaboutme': '🖐¡Hi! I am Programmer Analyst from Jujuy, Argentina. With knowledge in developing web applications and desktop applications and data organization. My skill as a developer is reflected in the implementation of practical and efficient solutions. through coding in different languages ​​such as Java, C# and frameworks such as Spring Boot, .Net and Angular. I am responsible, organized and enjoy work as a team to achieve project objectives. As a passionate software developer, I am excited to contribute to the world of technology.',
+	  'descriptionaboutme': `🖐 Hi! I am a <strong class="highlight">Programmer Analyst</strong> from <strong class="highlight">Jujuy, Argentina</strong>. With knowledge in <strong class="highlight">developing web applications</strong> and <strong class="highlight">desktop applications</strong>, as well as in <strong class="highlight">data organization</strong>.<br><br> My experience as a developer is reflected in implementing <strong class="highlight">practical and efficient solutions</strong> through coding in different languages like <strong class="highlight">Java</strong>, <strong class="highlight">C#</strong>, and frameworks like <strong class="highlight">Spring Boot</strong>, <strong class="highlight">.NET</strong>, and <strong class="highlight">Angular</strong>.<br><br> I consider myself <strong class="highlight">responsible</strong>, <strong class="highlight">organized</strong>, and enjoy <strong class="highlight">working in a team</strong> to achieve project goals. As a <strong class="highlight">passionate software developer</strong>, I am excited to contribute to the world of technology.`,
 	  'setion2': 'Browse My Recent',
 	  'setion2title': 'Projects',
 	  'desktopapp': 'Desktop Development',
@@ -93,6 +93,7 @@ const texts = {
 	  'contactname': 'Full Name',
 	  'contactmjs': 'Message',
 	  'contactsend': 'Send',
+	  'available':'Available to work',
 	  // Agrega más texto en inglés según sea necesario
 	},
 	'es': {
@@ -107,7 +108,7 @@ const texts = {
 	  'section1title1': 'Sobre Mí',
 	  'section1title2': 'Habilidades',
 	  'descriptiontitle': '🖐¡Hola! Soy Analista Programador Universitario de Jujuy, Argentina.',
-	  'descriptionaboutme': '🖐¡Hola! Soy Analista Programador Universitario de Jujuy, Argentina. Con conocimiento en desarrollo de aplicaciones web y aplicaciones desktop y organización de datos. Mi destreza como desarrollador se refleja en la implementación desoluciones prácticas y eficientes a través de la codificación en diferentes lenguajes como Java, C# y frameworks como Spring Boot, .Net. Soy responsable, organizado y disfruto trabajar en equipo para lograr los objetivos del proyecto. Como apasionado desarrollador de software, me entusiasma contribuir al mundo de la tecnología.',
+	  'descriptionaboutme':' 🖐 ¡Hola! Soy <strong class="highlight">Analista Programador Universitario</strong> de <strong class="highlight">Jujuy, Argentina</strong>. Tengo conocimiento en el <strong class="highlight">desarrollo de aplicaciones web</strong> y <strong class="highlight">aplicaciones desktop</strong>, así como en la <strong class="highlight">organización de datos</strong>.<br><br> Mi experiencia como desarrollador se refleja en la implementación de <strong class="highlight">soluciones prácticas y eficientes</strong> mediante la codificación en diversos lenguajes como <strong class="highlight">Java</strong>, <strong class="highlight">C#</strong> y frameworks como <strong class="highlight">Spring Boot</strong>, <strong class="highlight">.NET</strong> y <strong class="highlight">Angular</strong>.<br><br> Me considero una persona <strong class="highlight">responsable</strong>, <strong class="highlight">organizada</strong> y disfruto <strong class="highlight">trabajar en equipo</strong> para alcanzar los objetivos del proyecto. Como <strong class="highlight">apasionado desarrollador de software</strong>, me entusiasma contribuir al avance del mundo tecnológico.',
 	  'setion2': 'Explorar mis recientes',
 	  'setion2title': 'Proyectos',
 	  'desktopapp': 'Desarrollo de Escritorio',
@@ -134,6 +135,7 @@ const texts = {
 	  'contactname': 'Nombre Completo',
 	  'contactmjs': 'Mensaje',
 	  'contactsend': 'Enviar',
+	  'available':'Disponible para trabajar',
 	  
 	  
 	  // Agrega más texto en español según sea necesario
@@ -144,7 +146,7 @@ const texts = {
 	const elements = document.querySelectorAll('[data-i18n]');
 	elements.forEach(element => {
 	  const key = element.getAttribute('data-i18n');
-	  element.textContent = texts[lang][key];
+	  element.innerHTML = texts[lang][key]; // Cambia textContent por innerHTML
 	});
 	const downloadButton = document.getElementById('downloadButton');
     if (lang === 'en') {
