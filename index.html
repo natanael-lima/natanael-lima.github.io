@@ -39,7 +39,7 @@
    
     <div class="container py-2">
       <!--HEADER-->
-      <header class="pb-2  py-0 border-bottom " id="main-header">
+      <header class="pb-2 py-0 border-bottom" id="main-header">
         <nav class="nav-underline">
           <ul class="nav col-12 col-lg-auto me-lg-auto mt-1 justify-content-center mb-md-0">
             <!--<img src="./img/logo-ico2.ico" alt="Bootstrap" width="40" height="40">-->
@@ -70,28 +70,31 @@
           <div class="me-image">
             <div class="me-content">
               <img src="https://i.postimg.cc/wBBXq6Hb/meyoung.jpg" alt="Mi Foto">
- 
+            </div>
+            <div class="btn-container mt-2">
+              <div class="outer-container">
+                <div class="animated-border-container">
+                    <div class="content-box">
+                        Disponible para trabajar
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        
         <div class="section__text p-2">
           <p class="section__text__p1 mt-2" data-i18n="saludo">Hola, Yo soy</p>
           <h1 class="title">Natanael Lima</h1>
           <p class="section__text__p2" data-i18n="yosoy">Desarrollador de software</p>
-          <div class="btn-container mt-2 mb-2">
-            <div class="outer-container">
-              <div class="animated-border-container">
-                  <div class="content-box">
-                      Disponible para trabajar
-                  </div>
-              </div>
-            </div>
-          </div>
+          
           <div class="btn-container">
             <button class="btn-b btn-color-1" id="downloadButton" data-i18n="download" > Descargar CV </button>
             <button class="btn-b btn-color-1" onclick="location.href='./#contact'" data-i18n="contactinfo">Contactar</button>
           </div>
+          
           <div id="socials-container">
+            
             <a class="socials-profile" href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin"
                 viewBox="0 0 16 16">
@@ -114,6 +117,7 @@
             </svg>
             </a>
           </div>
+         
         </div>
       </section>
       <!--ABOUT & SKILL-->
@@ -135,14 +139,13 @@
             </div>
             <div class="col-md-8">
               <div class="h-100 p-5 rounded-2 bg-body shadow-sm">
-                <div class="d-flex pt-5">
-                  <p class="pb-3 small text-muted" data-i18n="descriptionaboutme">
-                      🖐¡Hola! Soy Analista Programador Universitario de Jujuy, Argentina.
-                      Con conocimiento en desarrollo de aplicaciones web y aplicaciones desktop y organización de datos. 
-                      Mi destreza como desarrollador se refleja en la implementación desoluciones prácticas y eficientes 
-                      a través de la codificación en diferentes lenguajes como Java, C# y frameworks como Spring Boot, .Net y Angular. Soy responsable, organizado y disfruto
-                       trabajar en equipo para lograr los objetivos del proyecto. Como apasionado desarrollador de software, 
-                       me entusiasma contribuir al mundo de la tecnología.
+                <div class="d-flex ">
+                  <p class="small text-muted description-about-me" data-i18n="descriptionaboutme" >
+                    🖐 ¡Hola! Soy <strong class="highlight">Analista Programador Universitario</strong> de <strong class="highlight">Jujuy, Argentina</strong>. Tengo experiencia en el <strong class="highlight">desarrollo de aplicaciones web</strong> y <strong class="highlight">aplicaciones desktop</strong>, así como en la <strong class="highlight">organización de datos</strong>.
+                    <br><br>
+                    Mi experiencia como desarrollador se refleja en la implementación de <strong class="highlight">soluciones prácticas y eficientes</strong> mediante la codificación en diversos lenguajes como <strong class="highlight">Java</strong>, <strong class="highlight">C#</strong> y frameworks como <strong class="highlight">Spring Boot</strong>, <strong class="highlight">.NET</strong> y <strong class="highlight">Angular</strong>.
+                    <br><br>
+                    Me considero una persona <strong class="highlight">responsable</strong>, <strong class="highlight">organizada</strong> y disfruto <strong class="highlight">trabajar en equipo</strong> para alcanzar los objetivos del proyecto. Como <strong class="highlight">apasionado desarrollador de software</strong>, me entusiasma contribuir al avance del mundo tecnológico.
                   </p>
                 </div>
               </div>
@@ -752,7 +755,7 @@
             <div class="card">
               
               <div class="carousel-overlay">
-                <img src=" https://i.postimg.cc/wMRH88bF/project-lovely.png" class="d-block w-100" alt="...">
+                <img src="https://i.postimg.cc/J4QznsVc/project-lovely-v2.png" class="d-block w-100" alt="...">
                 <div class="overlay">
                   <a href="https://github.com/natanael-lima/ProyectLovelyApp.git" style="text-decoration: none;">
                     <button class="btn-color-0 rounded-3 m-2"> 
@@ -837,7 +840,7 @@
                 </div>
                 <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 <div class="d-grid gap-2 mt-2 justify-content-center">
-                  <button class="rounded-5 btn-color-1 btn-send" type="submit" data-i18n="contactsend" disabled>Enviar</button>
+                  <button class="rounded-5 btn-color-0 btn-send" type="submit" data-i18n="contactsend" disabled>Enviar</button>
                 </div>
               </form>
             </div>

@@ -1,3 +1,18 @@
+.description-about-me {
+  font-size: 1rem; /* Ajusta el tamaño de fuente según tu diseño */
+  color: #6c757d; /* Color del texto */
+  line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+  text-align: justify; /* Justifica el texto para una apariencia más formal */
+}
+
+.description-about-me .highlight {
+  font-weight: bold;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #2fcc71; /* O cualquier color que prefieras */
+}
 
 /*======COLORS======*/
 :root{
@@ -17,22 +32,27 @@ body {
   font-family: Poppins;
   scroll-behavior: smooth;
   transition: background-color 0.5s, color 0.5s;
+
 }
 
 /* Estilo para el modo claro */
 body.light-mode {
-  background: linear-gradient(90deg, #eefff6 0%, #f7ffef 16%, #e9fff8 50%, #ecfcfc 83%, #eefff6 100%);
-  background-size: 400% 400%;
-  animation: toggle 4s infinite;
-  background-color: #ffffff; /* Puedes ajustar el color de fondo si es necesario */
+
+  background: radial-gradient(circle, #f6fff6, #ecffee,#cbe7d2);
+  background-size: 130% 130%;
+  animation: rotateGradient 10s infinite alternate;
+
+  /*background-color: #ffffff; */
   color: #000000; /* Color del texto en modo claro */
+ 
+  
 }
 
 /* Estilo para el modo oscuro */
 body.dark-mode {
-  background: radial-gradient(ellipse, #132018 0%, #121d14 16%, #12201c 50%, #0e2422 83%, #132018 100%);
-  background-size: 150% 150%;
-  animation: toggle 4s infinite;
+  background: radial-gradient(circle, #214237, #10201b, #040c0a);
+  background-size:130% 130%;
+  animation: rotateGradient 10s infinite linear;
   color: #ffffff; /* Color del texto en modo oscuro */
 }
 
@@ -44,7 +64,17 @@ body.dark-mode {
     background-position: 150% 50%;
   }
 }
-
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
 /* BUTTONS */
 .dropdown-menu {
   min-width: 5rem!important;
@@ -74,10 +104,9 @@ body.dark-mode {
 .language-buttons {
   position: fixed;
   top: 20px; /* Ajusta la posición vertical según tus necesidades */
-  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+  right: 30px; /* Ajusta la posición horizontal según tus necesidades */
   z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
-
 
 
 .btn-container {
@@ -142,7 +171,7 @@ body.dark-mode {
 .dark-mode .btn-color-1 {
   background: #e7fff1;
   border-color: #e7fff1;
-  color:#638b73;
+  color:rgb(38, 56, 45);
 }
 
 .dark-mode .btn-color-1:hover {
@@ -277,17 +306,17 @@ header {
 
 /* Estilos para cuando el header está scrolleado */
 .light-mode header.scrolled {
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.31);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
   border-radius: 35px;
-  background-color: rgba(233, 255, 245, 0.7);
-  backdrop-filter: blur(3px); /* Aplica el desenfoque al fondo detrás del elemento */
+  background-color: rgba(239, 255, 248, 0.7);
+  backdrop-filter: blur(10px); /* Aplica el desenfoque al fondo detrás del elemento */
 }
 
 .dark-mode header.scrolled {
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.31);
+  box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.3);
   border-radius: 35px;
-  background-color: rgba(15, 34, 24, 0.7);
-  backdrop-filter: blur(5px); /* Aplica el desenfoque al fondo detrás del elemento */
+  background-color: rgba(5, 14, 9, 0.7);
+  backdrop-filter: blur(10px); /* Aplica el desenfoque al fondo detrás del elemento */
 }
 
 
@@ -441,8 +470,8 @@ section {
 }
 .about-pic {
   border-radius: 1rem;
-  height: 310px;
-  width: 250px;
+  height: 360px;
+  width: 285px;
 }
 .section__pic-about {
   margin: auto 0;
@@ -680,7 +709,7 @@ footer ul {
     justify-content: center;
   }
   .section__text{
-    margin: 0;
+    margin: 30px 0 0 0;
   }
   .section__text__p2 {
     font-size: 1.25rem;
@@ -776,7 +805,7 @@ footer ul {
   align-items: center;
   justify-content: center;
   padding: 5px 10px;
-  background: linear-gradient(90deg, #dcffeb 0%, #f1fff1 100%);
+  background: linear-gradient(90deg, #ecfced 0%, #ecf8ed 100%);
   color: #5c7e5c; /* Texto blanco */
   border-radius: 25px; /* Ajusta esto según la forma que desees */
   z-index: 1;
@@ -788,7 +817,7 @@ footer ul {
   align-items: center;
   justify-content: center;
   padding: 5px 10px;
-  background: linear-gradient(90deg, #1b2921 0%, #1e291e 100%);
+  background: linear-gradient(90deg, #10201b 0%, #0e1b18 100%);
   color: #c0fac0; /* Texto blanco */
   border-radius: 25px; /* Ajusta esto según la forma que desees */
   z-index: 1;
