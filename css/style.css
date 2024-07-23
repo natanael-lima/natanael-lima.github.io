@@ -279,14 +279,14 @@ header {
 .light-mode header.scrolled {
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.31);
   border-radius: 35px;
-  background-color: rgba(230, 255, 248, 0.5);
-  backdrop-filter: blur(5px); /* Aplica el desenfoque al fondo detrás del elemento */
+  background-color: rgba(233, 255, 245, 0.7);
+  backdrop-filter: blur(3px); /* Aplica el desenfoque al fondo detrás del elemento */
 }
 
 .dark-mode header.scrolled {
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.31);
   border-radius: 35px;
-  background-color: rgba(32, 48, 37, 0.5);
+  background-color: rgba(15, 34, 24, 0.7);
   backdrop-filter: blur(5px); /* Aplica el desenfoque al fondo detrás del elemento */
 }
 
@@ -355,7 +355,7 @@ header {
 
 /* SECTIONS */
 section {
-  padding-top: 4vh;
+  padding-top: 8vh;
   /*height: 96vh;*/
   margin: 0 10rem;
   box-sizing: border-box;
