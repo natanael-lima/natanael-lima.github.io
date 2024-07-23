@@ -614,7 +614,7 @@ footer ul {
 
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: 93vh;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -651,7 +651,7 @@ footer ul {
 @media screen and (max-width: 600px) {
  
   #profile {
-    height: 85vh;
+    height: 95vh;
     margin-bottom: 0;
   }
   article {
