@@ -93,6 +93,7 @@ const texts = {
 	  'contactname': 'Full Name',
 	  'contactmjs': 'Message',
 	  'contactsend': 'Send',
+	  'available':'Available to work',
 	  // Agrega más texto en inglés según sea necesario
 	},
 	'es': {
@@ -134,6 +135,7 @@ const texts = {
 	  'contactname': 'Nombre Completo',
 	  'contactmjs': 'Mensaje',
 	  'contactsend': 'Enviar',
+	  'available':'Disponible para trabajar',
 	  
 	  
 	  // Agrega más texto en español según sea necesario

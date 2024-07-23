@@ -783,7 +783,7 @@ footer ul {
   content: '';
   position: absolute;
   top: -830%;
-  left:-950%;
+  /*left:-950%;*/
   bottom:20px;
   width:3815px;
   height: 630px;
