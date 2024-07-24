@@ -1,4 +1,4 @@
-// Espera a que el contenido de la página esté completamente cargado
+// Espera a que el contenido de la página esté completamente cargado navegador
 document.addEventListener('DOMContentLoaded', function() {
 	const header = document.getElementById('main-header');
   
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
   });
   
-
+// Boton para cambiar de sobre mi/habilidades
 document.addEventListener("DOMContentLoaded", function() {
 	// Obtener referencias a los botones
 	const aboutBtn = document.getElementById("aboutBtn");
@@ -52,7 +52,6 @@ england.addEventListener("click", function() {
 });
 
 //Idiomas
-
 const texts = {
 	'en': {
 	  'about': 'About Me',
@@ -141,7 +140,8 @@ const texts = {
 	  // Agrega más texto en español según sea necesario
 	}
   };
-  
+
+  // Funciona para cambiar de ingles/español
   function changeLanguage(lang) {
 	const elements = document.querySelectorAll('[data-i18n]');
 	elements.forEach(element => {
@@ -158,10 +158,10 @@ const texts = {
         downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
     }
   }
-
+  //Inicializa por defecto en español
   changeLanguage('es');
 
-
+//Cambiar modo dark/light, por defecto esta en light
 document.addEventListener('DOMContentLoaded', function () {
 	const toggleButton = document.getElementById('toggleButton');
 	const lightMode = document.getElementById('lightMode');
