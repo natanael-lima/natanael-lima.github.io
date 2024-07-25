@@ -124,7 +124,7 @@ const texts = {
 	  'card5title': 'Sistema Integral de Venta',
 	  'card6title': 'Sistema Gestor de Eventos',
 	  'card7title': 'Aplicación de Citas Lovely',
-	  'card7title': 'Plataforma E-Commerce Griiin',
+	  'card8title': 'Plataforma E-Commerce Griiin',
 	  'descriptioncard': 'Descripción',
 	  'tecnocard': 'Tecnologías',
 	  'card1content': 'Sistema de gestión para una playa de estacionamiento que cuenta con múltiples zonas y sectores. El sistema permite el registro de entrada y salida de vehículos, generación de tickets, gestión de clientes, tipos de vehículos y usuarios. Además, permite visualizar sectores ocupados y libres, generar reportes de ventas y realizar diversas operaciones administrativas.',
