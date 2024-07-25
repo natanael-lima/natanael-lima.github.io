@@ -122,6 +122,7 @@ body.dark-mode {
   animation-range:entry 0 cover 40% ;
 }
 
+
 /* BUTTONS */
 
 .buttons-language-container {
@@ -716,6 +717,15 @@ section {
   color: grey;
   font-size: 14px;
   font-weight: 300;
+}
+
+.btn-overlay {
+  margin: 0 10px;
+}
+
+
+.no-border-card {
+  border: none;
 }
 
 /* CONTACT SECTION */
