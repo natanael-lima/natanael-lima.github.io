@@ -127,7 +127,7 @@ body.dark-mode {
 .buttons-language-container {
   position: fixed;
   top: 20px; /* Ajusta la posición vertical según tus necesidades */
-  right: 30px; /* Ajusta la posición horizontal según tus necesidades */
+  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
   z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 .btn-language{
@@ -135,6 +135,7 @@ body.dark-mode {
   background-color: var(--btn-color);
   border: none;
   color: #fff;
+  
 }
 /* Estilos boton modo dark-light */
 .dropdown-menu {
@@ -371,7 +372,7 @@ header {
     top: 5px;
     left: 5%;
     width: 90%;
-    padding: 0 20px;
+    padding: 0 10px;
     justify-content: space-between;
   }
 
