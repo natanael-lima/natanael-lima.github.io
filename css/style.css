@@ -131,7 +131,7 @@ body.dark-mode {
   z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 .btn-language{
-  border-radius: 15%;
+  border-radius: 55%;
   background-color: var(--btn-color);
   border: none;
   color: #fff;
