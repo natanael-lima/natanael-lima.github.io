@@ -415,7 +415,7 @@ header {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: .875rem;
-  color: #e0e0e0; /* Color de texto en modo oscuro */
+  color: #f2fdf4; /* Color de texto en modo oscuro */
   transition: color 0.5s;
   font-weight: 500;
 }
@@ -426,7 +426,7 @@ header {
 
 .nav-underline-dark .active {
   font-weight: 500;
-  color: #c0c0c0; /* Color del texto activo en modo oscuro */
+  color: #e0e0e0; /* Color del texto activo en modo oscuro */
 }
 
 /* SECTIONS */
