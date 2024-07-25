@@ -54,6 +54,7 @@ england.addEventListener("click", function() {
 //Idiomas
 const texts = {
 	'en': {
+	  'mode-language':'EN',
 	  'about': 'About Me',
 	  'projects': 'Projects',
 	  'contact': 'Contact',
@@ -96,6 +97,7 @@ const texts = {
 	  // Agrega más texto en inglés según sea necesario
 	},
 	'es': {
+	  'mode-language':'ES',
 	  'about': 'Sobre Mí',
 	  'projects': 'Proyectos',
 	  'contact': 'Contacto',
