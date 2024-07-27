@@ -138,16 +138,11 @@ body.dark-mode {
   color: #fff;
   
 }
-/* Estilos boton modo dark-light */
+/* Estilos boton modo dark-light
 .dropdown-menu {
   min-width: 4rem!important;
 }
-/* Estilo para el color activo */
-.dropdown-menu .dropdown-item.active,
-.dropdown-menu .dropdown-item:active {
-  background-color: black !important; /* Cambia "your-desired-color" al color deseado */
-  color:white !important; /* Cambia "your-text-color" al color deseado para el texto */
-}
+
 .dropdown-custom .nav-link{
   color: #000!important;
   padding-top: .2rem !important; 
@@ -155,7 +150,7 @@ body.dark-mode {
 }
 .dropdown-custom .nav-link:hover{
   color: #2fcc71!important;
-}
+} */
 
 .btn-container {
   display: flex;
@@ -353,17 +348,19 @@ header {
 
 /* Estilos para cuando el header está scrolleado */
 .light-mode header.scrolled {
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
   border-radius: 35px;
-  background-color: rgba(239, 255, 248, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px); /* Aplica el desenfoque al fondo detrás del elemento */
+  text-shadow: 0.5px 0.5px 0px rgba(255, 255, 255, 0.2); /* Sombra negra */
 }
 
 .dark-mode header.scrolled {
-  box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.3);
   border-radius: 35px;
-  background-color: rgba(13, 27, 19, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px); /* Aplica el desenfoque al fondo detrás del elemento */
+  text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.2); /* Sombra negra */
 }
 
 
