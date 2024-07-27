@@ -38,11 +38,19 @@ body.light-mode {
 }
 
 /* Estilo base para el botón */
-.btn-mode-custom {
+.dark-mode .btn-mode-custom {
   border: none;
   background: none;
   padding: 0;
   margin: 0;
+  color: #fff;
+}
+.light-mode .btn-mode-custom {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #000;
 }
 /* Estilo para los íconos dentro del botón */
 .btn-mode-custom svg {
@@ -59,7 +67,6 @@ body.light-mode {
 .btn-mode-custom:active svg, 
 .btn-mode-custom:focus svg {
   outline: none;
-  fill: #239b55; /* Color deseado cuando se hace clic */
 }
 
 /* BODY */
