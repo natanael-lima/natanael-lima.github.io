@@ -170,15 +170,18 @@ const texts = {
 //Cambiar modo dark/light, por defecto esta en light
 document.addEventListener('DOMContentLoaded', function () {
 	const toggleButton = document.getElementById('toggleButton');
-	const lightMode = document.getElementById('lightMode');
-	const darkMode = document.getElementById('darkMode');
 	const darkIcon = document.getElementById('dark-icon');
 	const lightIcon = document.getElementById('light-icon');
+	
+	
 	// Referencia al contenedor de la navbar
 	const nav = document.querySelector('nav');
   
+	// Inicializar el estado
+	let isLightMode = true;
+
 	// Función para cambiar entre modos
-	function switchMode(isLightMode) {
+	function switchMode() {
 	  if (isLightMode) {
 		darkIcon.style.display = 'none';
 		lightIcon.style.display = 'block';
@@ -194,23 +197,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		nav.classList.add('nav-underline-dark'); // Agregar clase para modo oscuro
       	nav.classList.remove('nav-underline'); // Eliminar clase para modo claro
 	  }
+	  isLightMode = !isLightMode;
 	}
   
-	// Event listeners para los enlaces del menú
-	lightMode.addEventListener('click', function () {
-	  switchMode(true);
-	  document.getElementById('darkIcon').classList.remove('active');
-	  document.getElementById('lightIcon').classList.add('active');
-	});
-  
-	darkMode.addEventListener('click', function () {
-	  switchMode(false);
-	  document.getElementById('lightIcon').classList.remove('active');
-	  document.getElementById('darkIcon').classList.add('active');
-	});
-  
-	// Inicializar en modo oscuro
-	switchMode(true);
+	// Event listener para el botón de alternancia
+	toggleButton.addEventListener('click', switchMode);
+
+	// Inicializar en modo claro
+	switchMode();
   });
   
 
