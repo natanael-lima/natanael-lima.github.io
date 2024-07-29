@@ -492,12 +492,12 @@ section {
 }
 
 .presentation-text-p2 {
-  font-size: 1.75rem;
+  font-size: clamp(1rem, 4vw +1rem, 1.75rem);
   margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 4vw +1rem, 3rem);
   text-align: center;
 }
 /* Estilos span animation */
@@ -579,8 +579,8 @@ section {
 }
 .about-image{
   border-radius: 5%;
-  height: 350px;
-  width: 280px;
+  height: 380px;
+  width: 250px;
   object-fit: cover;
 }
 .container-about-image{
@@ -916,13 +916,6 @@ Pantallas Pequeñas (768px - 992px)
   }
   .text-container-welcome{
     margin: 30px 0 0 0;
-  }
-  .presentation-text-p2 {
-    font-size: 1.25rem;
-    
-  }
-  .title {
-    font-size: 2rem;
   }
   .text-container {
     text-align: justify;
