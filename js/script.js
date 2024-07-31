@@ -54,7 +54,7 @@ england.addEventListener("click", function() {
 //Idiomas
 const texts = {
 	'en': {
-	  'mode-language':'EN',
+	  'icon-src': 'https://img.icons8.com/color/48/great-britain-circular.png', // Cambia a la URL del ícono del idioma
 	  'about': 'About Me',
 	  'projects': 'Projects',
 	  'contact': 'Contact',
@@ -99,7 +99,7 @@ const texts = {
 	  // Agrega más texto en inglés según sea necesario
 	},
 	'es': {
-	  'mode-language':'ES',
+	  'icon-src': 'https://img.icons8.com/color/48/argentina-circular.png', // Cambia a la URL del ícono del idioma
 	  'about': 'Sobre Mí',
 	  'projects': 'Proyectos',
 	  'contact': 'Contacto',
@@ -163,6 +163,9 @@ const texts = {
         // Establecer un valor predeterminado para el botón en caso de que el idioma no esté definido
         downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
     }
+	// Cambiar el ícono en el botón del idioma
+	const languageIcon = document.getElementById('languageIcon');
+	languageIcon.src = texts[lang]['icon-src'];
   }
   //Inicializa por defecto en español
   changeLanguage('es');
@@ -172,7 +175,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const toggleButton = document.getElementById('toggleButton');
 	const darkIcon = document.getElementById('dark-icon');
 	const lightIcon = document.getElementById('light-icon');
-	
 	
 	// Referencia al contenedor de la navbar
 	const nav = document.querySelector('nav');

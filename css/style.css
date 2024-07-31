@@ -131,33 +131,39 @@ body.dark-mode {
 
 
 /* BUTTONS */
-
 .buttons-language-container {
   position: fixed;
-  top: 20px; /* Ajusta la posición vertical según tus necesidades */
-  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+  top: 18px; /* Ajusta la posición vertical según tus necesidades */
+  right: 18px; /* Ajusta la posición horizontal según tus necesidades */
   z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 .btn-language{
-  border-radius: 55%;
-  background-color: var(--btn-color);
   border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
   color: #fff;
-  
 }
-/* Estilos boton modo dark-light
+/* Estilo para los íconos dentro del botón */
+.btn-language img {
+  width: 24;
+  height: 24;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+/* Estilo para el hover en el botón */
+.btn-language:hover img {
+  transform: scale(1.2);
+}
+/* Estilos boton modo dropdown language*/
 .dropdown-menu {
   min-width: 4rem!important;
 }
-
-.dropdown-custom .nav-link{
-  color: #000!important;
-  padding-top: .2rem !important; 
-  padding-bottom: .2rem !important;
+.dropdown-item.active{
+  background-color: #000!important;
 }
-.dropdown-custom .nav-link:hover{
-  color: #2fcc71!important;
-} */
+.dropdown-item:focus{
+  background-color: #23a057!important;
+}
 
 .btn-container {
   display: flex;
