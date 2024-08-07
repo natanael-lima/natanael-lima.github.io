@@ -1,3 +1,26 @@
+
+.gradient-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px; /* Grosor del gradiente */
+  background: linear-gradient(to right, #b2ffbc, #94ffd2, #34b430);
+}
+
+.card-image-me {
+  width: 100px !important; /* Tamaño de la imagen más pequeño */
+  height: 100px; /* Tamaño de la imagen más pequeño */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+.card-image-me:hover {
+  transform: scale(1.1);
+
+}
+
+
+
 /*======COLORS======*/
 :root{
   --firt-color:#2fcc71;
