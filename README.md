@@ -43,6 +43,6 @@ Para visualizar el proyecto localmente, sigue estos pasos:
 
 Puedes contactarme a través de:
 
-- **Correo Electrónico**: [lima73777@gmail.com](mailto:lima73777@gmail.com)
+- **Correo Electrónico**: [natanael.lima.dev@gmail.com](mailto:natanael.lima.dev@gmail.com)
 - **LinkedIn**: [https://www.linkedin.com/in/natanael-dev/](https://www.linkedin.com/in/natanael-dev/)
 - **GitHub**: [natanael-lima](https://github.com/natanael-lima)
