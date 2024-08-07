@@ -28,4 +28,21 @@ Para visualizar el proyecto localmente, sigue estos pasos:
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/natanael-lima/natanael-lima.github.io.git
+2. Navega a la carpeta del proyecto:
+   ```bash
+   cd natanael-lima.github.io
+3. Abre el archivo index.html en tu navegador.
 
+## Tecnologías Utilizadas
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+
+## Contacto
+
+Puedes contactarme a través de:
+
+- **Correo Electrónico**: [lima73777@gmail.com](mailto:lima73777@gmail.com)
+- **LinkedIn**: [https://www.linkedin.com/in/natanael-dev/](https://www.linkedin.com/in/natanael-dev/)
+- **GitHub**: [natanael-lima](https://github.com/natanael-lima)
