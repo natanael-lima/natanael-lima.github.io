@@ -153,30 +153,83 @@ body.dark-mode {
 }
 
 
+
 /* BUTTONS */
-.buttons-language-container {
+/* Buttons Language */
+.language-switch-container {
+  width: 45px;
+  height: 25.5px;
   position: fixed;
-  top: 18px; /* Ajusta la posición vertical según tus necesidades */
+  top: 20px; /* Ajusta la posición vertical según tus necesidades */
   right: 18px; /* Ajusta la posición horizontal según tus necesidades */
   z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
-.btn-language{
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  color: #fff;
+
+.language-switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-/* Estilo para los íconos dentro del botón */
-.btn-language img {
-  width: 24;
-  height: 24;
-  transition: transform 0.3s ease, fill 0.3s ease;
+
+.light-mode .language-switch-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0b0f0dc7;
+  border-radius: 25.5px;
+  transition: .4s;
 }
-/* Estilo para el hover en el botón */
-.btn-language:hover img {
-  transform: scale(1.2);
+
+.dark-mode .language-switch-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e7fff1b0;
+  border-radius: 25.5px;
+  transition: .4s;
 }
+
+
+.language-switch-label:before {
+  position: absolute;
+  content: "";
+  height: 19.5px;
+  width: 19.5px;
+  left: 4px;
+  bottom: 3px;
+  background-color: rgba(255, 255, 255, 0.61);
+  transition: .4s;
+  border-radius: 50%;
+}
+/* Estilo del ícono */
+.language-icon {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  height: 19.5px;
+  width: 19.5px;
+  transition: transform 0.4s ease, fill 0.3s ease;
+}
+
+/* Cambiar fondo e ícono al activar el switch */
+.language-switch:checked + .language-switch-label {
+  background-color: #2abb6685;
+}
+
+.language-switch:checked + .language-switch-label:before {
+  transform: translateX(19px);
+}
+
+.language-switch:checked + .language-switch-label .language-icon {
+  transform: translateX(19px);
+}
+
 /* Estilos boton modo dropdown language*/
 .dropdown-menu {
   min-width: 4rem!important;
