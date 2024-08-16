@@ -23,21 +23,13 @@
 <body>
   <main class="vieww">
     <!-- Botón de cambio de idioma -->
-    <div class="buttons-language-container">
-      <div class="btn-group"><!-- dropdown-toggle dropdown-toggle-split-->
-        <button id="languageButton" type="button" class="btn-language dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Cambiar Language" >
-          <img id="languageIcon" width="24" height="24" src="https://img.icons8.com/color/48/argentina-circular.png" alt="language"/>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a id="spain" class="dropdown-item active" href="#" onclick="changeLanguage('es')" aria-label="Cambiar Language">
-              <img width="24" height="24" src="https://img.icons8.com/color/48/argentina-circular.png" alt="spain2-circular" />
-              ESPAÑOL</a></li>
-          <li><a id="england" class="dropdown-item" href="#" onclick="changeLanguage('en')">
-              <img width="24" height="24" src="https://img.icons8.com/color/48/great-britain-circular.png"
-                alt="great-britain-circular" /> ENGLISH</a></li>
-        </ul>
-      </div>
+    <div class="language-switch-container" >
+      <input type="checkbox" class="language-switch" id="languageSwitch" onclick="toggleLanguage()"  aria-label="Cambiar Language" />
+      <label class="language-switch-label" for="languageSwitch">
+        <img id="languageIcon" src="https://img.icons8.com/color/48/argentina-circular.png" alt="Language" class="language-icon" />
+      </label>
     </div>
+    
     <div class="container py-2">
       <!--HEADER-->
       <header class="pb-2 py-0 border-bottom" id="main-header">

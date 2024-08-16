@@ -35,22 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
   });
 
-
-// Obtener los elementos de idioma
-const spain = document.getElementById("spain");
-const england = document.getElementById("england");
-
-// Establecer el evento de clic para cambiar el estado activo
-spain.addEventListener("click", function() {
-	spain.classList.add("active");
-	england.classList.remove("active");
-});
-
-england.addEventListener("click", function() {
-	england.classList.add("active");
-	spain.classList.remove("active");
-});
-
 //Idiomas
 const texts = {
 	'en': {
@@ -147,27 +131,44 @@ const texts = {
 	}
   };
 
-  // Funciona para cambiar de ingles/español
+  //Nuevo change language ingles/español
   function changeLanguage(lang) {
+	const languageIcon = document.getElementById('languageIcon');
+    const languageSwitch = document.getElementById('languageSwitch');
+	const downloadButton = document.getElementById('downloadButton');
+
+	if (lang === 'en') {
+        languageIcon.src = "https://img.icons8.com/color/48/great-britain-circular.png";
+        languageSwitch.checked = true; // Mueve el switch a "Inglés"
+    } else if (lang === 'es') {
+        languageIcon.src = "https://img.icons8.com/color/48/argentina-circular.png";
+        languageSwitch.checked = false; // Mueve el switch a "Español"
+    }
+  
+	// Lógica para cambiar el idioma del contenido
 	const elements = document.querySelectorAll('[data-i18n]');
 	elements.forEach(element => {
 	  const key = element.getAttribute('data-i18n');
-	  element.innerHTML = texts[lang][key]; // Cambia textContent por innerHTML
+	  element.innerHTML = texts[lang][key];
 	});
-	const downloadButton = document.getElementById('downloadButton');
-    if (lang === 'en') {
-        downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
-    } else if (lang === 'es') {
-        downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
-    } else {
-        // Establecer un valor predeterminado para el botón en caso de que el idioma no esté definido
-        downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
-    }
-	// Cambiar el ícono en el botón del idioma
-	const languageIcon = document.getElementById('languageIcon');
-	languageIcon.src = texts[lang]['icon-src'];
+  	// Lógica para descargar cv
+	if (lang === 'en') {
+	  downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
+	} else if (lang === 'es') {
+	  downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
+	}
   }
-  //Inicializa por defecto en español
+
+  function toggleLanguage() {
+	const languageSwitch = document.getElementById('languageSwitch');
+	
+	if (languageSwitch.checked) {
+	  changeLanguage('en');
+	} else {
+	  changeLanguage('es');
+	}
+  }
+  // Inicializa por defecto en español al cargar la página
   changeLanguage('es');
 
 //Cambiar modo dark/light, por defecto esta en light
