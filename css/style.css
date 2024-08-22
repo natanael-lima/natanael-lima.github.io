@@ -156,12 +156,23 @@ body.dark-mode {
 
 /* BUTTONS */
 /* Buttons Language */
+.mode-switch {
+  width: 35px;
+  height: 25.5px;
+  position: fixed;
+  top: 20px; /* Ajusta la posición vertical según tus necesidades */
+  right: 18px; /* Ajusta la posición horizontal según tus necesidades */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+
+/* Buttons Language */
 .language-switch-container {
   width: 45px;
   height: 25.5px;
   position: fixed;
   top: 20px; /* Ajusta la posición vertical según tus necesidades */
-  right: 18px; /* Ajusta la posición horizontal según tus necesidades */
+  right: 1%; /* Ajusta la posición horizontal según tus necesidades */
   z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 
@@ -424,8 +435,8 @@ body.dark-mode {
 /* NAVEGADOR */
 header {
   top: 5px;
-  left: 25%;
-  width: 50%;
+  left: 35%;
+  width: 30%;
   justify-content: center;
   align-items: center;
   display: flex;
