@@ -189,7 +189,7 @@ body.dark-mode {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #0b0f0dc7;
+  background-color: #81b3c0c7;
   border-radius: 25.5px;
   transition: .4s;
 }
@@ -201,7 +201,7 @@ body.dark-mode {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e7fff1b0;
+  background-color: #ffffffc7;
   border-radius: 25.5px;
   transition: .4s;
 }
@@ -230,7 +230,7 @@ body.dark-mode {
 
 /* Cambiar fondo e ícono al activar el switch */
 .language-switch:checked + .language-switch-label {
-  background-color: #2abb6685;
+  background-color: #e4b5b5bb;
 }
 
 .language-switch:checked + .language-switch-label:before {
@@ -910,7 +910,7 @@ footer ul {
   }
 
   .me-content img{
-    background-color: rgb(168, 245, 175);
+    background-color: rgb(147, 255, 183);
     border-radius: 50% 50% 0 0;
     width: 250px;
     height: 260px;
