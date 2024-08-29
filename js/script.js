@@ -43,9 +43,6 @@ const texts = {
 	  'projects': 'Projects',
 	  'contact': 'Contact',
 	  'saludo': '¡Hi! I Am',
-	  'yosoy': 'Software Developer',
-	  'download': 'Download CV',
-	  'contactinfo': 'Contact Info',
 	  'section1': 'Get To Know More',
 	  'section1title1': 'About Me',
 	  'section1title2': 'Skills',
@@ -88,9 +85,6 @@ const texts = {
 	  'projects': 'Proyectos',
 	  'contact': 'Contacto',
 	  'saludo': '¡Hola! Soy',
-	  'yosoy': 'Desarrollador de software',
-	  'download': 'Descargar CV',
-	  'contactinfo': 'Contactar',
 	  'section1': 'Conozca más',
 	  'section1title1': 'Sobre Mí',
 	  'section1title2': 'Habilidades',
@@ -131,11 +125,11 @@ const texts = {
 	}
   };
 
+  
   //Nuevo change language ingles/español
   function changeLanguage(lang) {
 	const languageIcon = document.getElementById('languageIcon');
     const languageSwitch = document.getElementById('languageSwitch');
-	const downloadButton = document.getElementById('downloadButton');
 
 	if (lang === 'en') {
         languageIcon.src = "https://img.icons8.com/color/48/great-britain-circular.png";
@@ -152,10 +146,11 @@ const texts = {
 	  element.innerHTML = texts[lang][key];
 	});
   	// Lógica para descargar cv
+	const downloadButton = document.getElementById('downloadButton'); // Asegúrate de que el botón está disponible
 	if (lang === 'en') {
-	  downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
+		downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
 	} else if (lang === 'es') {
-	  downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
+		downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
 	}
   }
 

@@ -19,8 +19,6 @@
 
 }
 
-
-
 /*======COLORS======*/
 :root{
   --firt-color:#2fcc71;
@@ -156,24 +154,13 @@ body.dark-mode {
 
 /* BUTTONS */
 /* Buttons Language */
-.mode-switch {
-  width: 35px;
-  height: 25.5px;
-  position: fixed;
-  top: 20px; /* Ajusta la posición vertical según tus necesidades */
-  right: 18px; /* Ajusta la posición horizontal según tus necesidades */
-  z-index: 1000; /* Asegura que esté encima de otros elementos */
-}
-
-
-/* Buttons Language */
 .language-switch-container {
   width: 45px;
   height: 25.5px;
-  position: fixed;
-  top: 20px; /* Ajusta la posición vertical según tus necesidades */
-  right: 1%; /* Ajusta la posición horizontal según tus necesidades */
-  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  margin-left: 5px; /* Ajusta el margen para alinear correctamente */
+  bottom:4px;
+  position: relative; /* Relativo para que se alinee con el contenido del header */
+  z-index: 1000;
 }
 
 .language-switch {
@@ -189,7 +176,7 @@ body.dark-mode {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #81b3c0c7;
+  background-color: #86b7c4c7;
   border-radius: 25.5px;
   transition: .4s;
 }
@@ -201,7 +188,7 @@ body.dark-mode {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ffffffc7;
+  background-color: #ffffffc2;
   border-radius: 25.5px;
   transition: .4s;
 }
@@ -230,7 +217,7 @@ body.dark-mode {
 
 /* Cambiar fondo e ícono al activar el switch */
 .language-switch:checked + .language-switch-label {
-  background-color: #e4b5b5bb;
+  background-color: #c7c7c7bb;
 }
 
 .language-switch:checked + .language-switch-label:before {
@@ -445,6 +432,8 @@ header {
   z-index: 999;
   transition: all 0.3s ease; /* Transición suave para los cambios de estilo */
 }
+
+
 
 /* Estilos para cuando el header está scrolleado */
 .light-mode header.scrolled {
@@ -823,13 +812,6 @@ section {
 
 .no-border-card {
   border: none;
-}
-
-/* CONTACT SECTION */
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 /* FOOTER SECTION */
