@@ -118,9 +118,9 @@ body.dark-mode {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e7fff1; /*e7fff1*/
+  background-color: #4b5e52cc; /*e7fff1*/
   border-radius: 50%; /* Asegura que el contenedor sea redondeado */
-  padding: 5px; /* Ajusta el padding para que sea un 2% más grande que el icono */
+  padding: 7px; /* Ajusta el padding para que sea un 2% más grande que el icono */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar el contenedor */
 }
 
@@ -128,26 +128,10 @@ body.dark-mode {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #a8c5b4; /*e7fff1*/
+  background-color: #658a72c5; /*e7fff1*/
   border-radius: 50%; /* Asegura que el contenedor sea redondeado */
-  padding: 5px; /* Ajusta el padding para que sea un 2% más grande que el icono */
+  padding: 7px; /* Ajusta el padding para que sea un 2% más grande que el icono */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar el contenedor */
-}
-
-/* Estilo base para el botón */
-.dark-mode .btn-mode-custom {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  color: #131614;
-}
-.light-mode .btn-mode-custom {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  color: #dcfff6;
 }
 
 /* Estilos para el botón de modo */
@@ -156,7 +140,7 @@ body.dark-mode {
   background: none;
   padding: 0;
   margin: 0;
-  color: #000;
+  color: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,28 +148,28 @@ body.dark-mode {
 
 /* Estilo para los iconos dentro del botón */
 .btn-mode-custom svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   transition: transform 0.3s ease, fill 0.3s ease;
 }
 
 /* Estilo para el hover en el botón */
 .btn-mode-custom:hover svg {
-  transform: scale(1.2);
+  transform: scale(1.1);
   /*fill: #ffffff00;  Color deseado al pasar el cursor */
 }
 
 /* Estilo del icono dentro del botón */
 .language-icon {
-  width: 22px; /* Tamaño del icono */
-  height: 22px; 
+  width: 18px; /* Tamaño del icono */
+  height: 18px; 
   transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves para el icono */
 }
 
 /* Efecto hover para el botón */
 .language-switch:hover .language-icon {
-  transform: scale(1.2); /* Efecto de agrandamiento */
-  opacity: 0.8; /* Opacidad al hacer hover */
+  transform: scale(1.1); /* Efecto de agrandamiento */
+  /*opacity: 0.8;  Opacidad al hacer hover */
 }
 
 /*-------------------*/
