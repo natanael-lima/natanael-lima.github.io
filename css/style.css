@@ -1,24 +1,3 @@
-
-.gradient-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 5px; /* Grosor del gradiente */
-  background: linear-gradient(to right, #b2ffbc, #94ffd2, #34b430);
-}
-
-.card-image-me {
-  width: 100px !important; /* Tamaño de la imagen más pequeño */
-  height: 100px; /* Tamaño de la imagen más pequeño */
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out; /* Transición suave */
-}
-.card-image-me:hover {
-  transform: scale(1.1);
-
-}
-
 /*======COLORS======*/
 :root{
   --firt-color:#2fcc71;
@@ -57,39 +36,6 @@ body.light-mode {
 #toggleButton svg.active {
   display: inline;
 }
-
-/* Estilo base para el botón */
-.dark-mode .btn-mode-custom {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-}
-.light-mode .btn-mode-custom {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  color: #000;
-}
-/* Estilo para los íconos dentro del botón */
-.btn-mode-custom svg {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.3s ease, fill 0.3s ease;
-}
-/* Estilo para el hover en el botón */
-.btn-mode-custom:hover svg {
-  transform: scale(1.3);
-  fill: #2fcc71; /* Color deseado al pasar el cursor */
-}
-/* Opcional: Estilo para el estado activo/foco del botón */
-.btn-mode-custom:active svg, 
-.btn-mode-custom:focus svg {
-  outline: none;
-}
-
 /* BODY */
 /* Estilo común para el cuerpo */
 body {
@@ -150,95 +96,99 @@ body.dark-mode {
   animation-range:entry 0 cover 30% ;
 }
 
-
-
 /* BUTTONS */
-/* Buttons Language */
-.language-switch-container {
-  width: 45px;
-  height: 25.5px;
-  margin-left: 5px; /* Ajusta el margen para alinear correctamente */
-  bottom:4px;
-  position: relative; /* Relativo para que se alinee con el contenido del header */
-  z-index: 1000;
+/* Contenedor fijo para los botones */
+.fixed-buttons {
+  position: fixed;
+  top: 50%;
+  right: 20px; /* Ajusta la distancia desde el borde derecho según tus necesidades */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
 }
 
-.language-switch {
-  opacity: 0;
-  width: 0;
-  height: 0;
+/* Espaciado entre los botones */
+.fixed-buttons .btn-group {
+  margin-bottom: 10px; /* Ajusta el espaciado entre los botones si es necesario */
+}
+/* Contenedor blanco alrededor de los botones */
+.dark-mode .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7fff1; /*e7fff1*/
+  border-radius: 50%; /* Asegura que el contenedor sea redondeado */
+  padding: 5px; /* Ajusta el padding para que sea un 2% más grande que el icono */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar el contenedor */
 }
 
-.light-mode .language-switch-label {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #86b7c4c7;
-  border-radius: 25.5px;
-  transition: .4s;
+.light-mode .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8c5b4; /*e7fff1*/
+  border-radius: 50%; /* Asegura que el contenedor sea redondeado */
+  padding: 5px; /* Ajusta el padding para que sea un 2% más grande que el icono */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar el contenedor */
 }
 
-.dark-mode .language-switch-label {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ffffffc2;
-  border-radius: 25.5px;
-  transition: .4s;
+/* Estilo base para el botón */
+.dark-mode .btn-mode-custom {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #131614;
+}
+.light-mode .btn-mode-custom {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #dcfff6;
 }
 
-
-.language-switch-label:before {
-  position: absolute;
-  content: "";
-  height: 19.5px;
-  width: 19.5px;
-  left: 4px;
-  bottom: 3px;
-  background-color: rgba(255, 255, 255, 0.61);
-  transition: .4s;
-  border-radius: 50%;
+/* Estilos para el botón de modo */
+.btn-mode-custom {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* Estilo del ícono */
+
+/* Estilo para los iconos dentro del botón */
+.btn-mode-custom svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+/* Estilo para el hover en el botón */
+.btn-mode-custom:hover svg {
+  transform: scale(1.2);
+  /*fill: #ffffff00;  Color deseado al pasar el cursor */
+}
+
+/* Estilo del icono dentro del botón */
 .language-icon {
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  height: 19.5px;
-  width: 19.5px;
-  transition: transform 0.4s ease, fill 0.3s ease;
+  width: 22px; /* Tamaño del icono */
+  height: 22px; 
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves para el icono */
 }
 
-/* Cambiar fondo e ícono al activar el switch */
-.language-switch:checked + .language-switch-label {
-  background-color: #c7c7c7bb;
+/* Efecto hover para el botón */
+.language-switch:hover .language-icon {
+  transform: scale(1.2); /* Efecto de agrandamiento */
+  opacity: 0.8; /* Opacidad al hacer hover */
 }
 
-.language-switch:checked + .language-switch-label:before {
-  transform: translateX(19px);
-}
-
-.language-switch:checked + .language-switch-label .language-icon {
-  transform: translateX(19px);
-}
-
-/* Estilos boton modo dropdown language*/
-.dropdown-menu {
-  min-width: 4rem!important;
-}
-.dropdown-item.active{
-  background-color: #000!important;
-}
-.dropdown-item:focus{
-  background-color: #23a057!important;
-}
-
+/*-------------------*/
 .btn-container {
   display: flex;
   justify-content: center;
@@ -1002,4 +952,23 @@ Pantallas Pequeñas (768px - 992px)
     object-fit: cover;
     border-radius: 10%;
   }
+}
+.gradient-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px; /* Grosor del gradiente */
+  background: linear-gradient(to right, #b2ffbc, #94ffd2, #34b430);
+}
+
+.card-image-me {
+  width: 100px !important; /* Tamaño de la imagen más pequeño */
+  height: 100px; /* Tamaño de la imagen más pequeño */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+.card-image-me:hover {
+  transform: scale(1.1);
+
 }
