@@ -127,44 +127,52 @@ const texts = {
 
   
   //Nuevo change language ingles/español
-  function changeLanguage(lang) {
+  document.addEventListener('DOMContentLoaded', function () {
+	const languageSwitchButton = document.getElementById('languageSwitchButton');
 	const languageIcon = document.getElementById('languageIcon');
-    const languageSwitch = document.getElementById('languageSwitch');
+	let currentLang = 'es'; // Inicializa el idioma a español por defecto
 
-	if (lang === 'en') {
-        languageIcon.src = "https://img.icons8.com/color/48/great-britain-circular.png";
-        languageSwitch.checked = true; // Mueve el switch a "Inglés"
+  // Función para cambiar el idioma
+  function changeLanguage(lang) {
+    if (lang === 'en') {
+      languageIcon.src = "https://img.icons8.com/color/48/great-britain-circular.png";
+      currentLang = 'en';
     } else if (lang === 'es') {
-        languageIcon.src = "https://img.icons8.com/color/48/argentina-circular.png";
-        languageSwitch.checked = false; // Mueve el switch a "Español"
+      languageIcon.src = "https://img.icons8.com/color/48/argentina-circular.png";
+      currentLang = 'es';
     }
-  
-	// Lógica para cambiar el idioma del contenido
-	const elements = document.querySelectorAll('[data-i18n]');
-	elements.forEach(element => {
-	  const key = element.getAttribute('data-i18n');
-	  element.innerHTML = texts[lang][key];
-	});
-  	// Lógica para descargar cv
-	const downloadButton = document.getElementById('downloadButton'); // Asegúrate de que el botón está disponible
-	if (lang === 'en') {
-		downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
-	} else if (lang === 'es') {
-		downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
-	}
+	 // Lógica para cambiar el idioma del contenido
+	 const elements = document.querySelectorAll('[data-i18n]');
+	 elements.forEach(element => {
+	   const key = element.getAttribute('data-i18n');
+	   element.innerHTML = texts[lang][key];
+	 });
+ 
+	 // Lógica para descargar el CV
+	 const downloadButton = document.getElementById('downloadButton');
+	 if (lang === 'en') {
+	   downloadButton.setAttribute('onclick', "window.open('./img/CV-EN.pdf')");
+	 } else if (lang === 'es') {
+	   downloadButton.setAttribute('onclick', "window.open('./img/CV-ES.pdf')");
+	 }
+   }
+ 
+   // Función para alternar el idioma al hacer clic en el botón
+   function toggleLanguage() {
+    if (currentLang === 'es') {
+      changeLanguage('en');
+    } else {
+      changeLanguage('es');
+    }
   }
 
-  function toggleLanguage() {
-	const languageSwitch = document.getElementById('languageSwitch');
-	
-	if (languageSwitch.checked) {
-	  changeLanguage('en');
-	} else {
-	  changeLanguage('es');
-	}
-  }
+  // Asigna el evento de clic al botón
+  languageSwitchButton.addEventListener('click', toggleLanguage);
+
   // Inicializa por defecto en español al cargar la página
   changeLanguage('es');
+});
+
 
 //Cambiar modo dark/light, por defecto esta en light
 document.addEventListener('DOMContentLoaded', function () {
