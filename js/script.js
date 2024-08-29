@@ -135,10 +135,10 @@ const texts = {
   // Función para cambiar el idioma
   function changeLanguage(lang) {
     if (lang === 'en') {
-      languageIcon.src = "https://img.icons8.com/color/48/great-britain-circular.png";
+      languageIcon.src = "https://img.icons8.com/color/24/usa-circular.png";
       currentLang = 'en';
     } else if (lang === 'es') {
-      languageIcon.src = "https://img.icons8.com/color/48/argentina-circular.png";
+      languageIcon.src = "https://img.icons8.com/color/24/argentina-circular.png";
       currentLang = 'es';
     }
 	 // Lógica para cambiar el idioma del contenido
