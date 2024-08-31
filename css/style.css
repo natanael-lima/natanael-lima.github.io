@@ -120,7 +120,7 @@ body.dark-mode {
   align-items: center;
   background-color: #4b5e52cc; /*e7fff1*/
   border-radius: 50%; /* Asegura que el contenedor sea redondeado */
-  padding: 7px; /* Ajusta el padding para que sea un 2% más grande que el icono */
+  padding: 6px; /* Ajusta el padding para que sea un 2% más grande que el icono */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar el contenedor */
 }
 
@@ -130,7 +130,7 @@ body.dark-mode {
   align-items: center;
   background-color: #658a72c5; /*e7fff1*/
   border-radius: 50%; /* Asegura que el contenedor sea redondeado */
-  padding: 7px; /* Ajusta el padding para que sea un 2% más grande que el icono */
+  padding: 6px; /* Ajusta el padding para que sea un 2% más grande que el icono */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar el contenedor */
 }
 
@@ -148,27 +148,27 @@ body.dark-mode {
 
 /* Estilo para los iconos dentro del botón */
 .btn-mode-custom svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   transition: transform 0.3s ease, fill 0.3s ease;
 }
 
 /* Estilo para el hover en el botón */
 .btn-mode-custom:hover svg {
-  transform: scale(1.1);
+  transform: scale(1.2);
   /*fill: #ffffff00;  Color deseado al pasar el cursor */
 }
 
 /* Estilo del icono dentro del botón */
 .language-icon {
-  width: 18px; /* Tamaño del icono */
-  height: 18px; 
+  width: 20px; /* Tamaño del icono */
+  height: 20px; 
   transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves para el icono */
 }
 
 /* Efecto hover para el botón */
 .language-switch:hover .language-icon {
-  transform: scale(1.1); /* Efecto de agrandamiento */
+  transform: scale(1.2); /* Efecto de agrandamiento */
   /*opacity: 0.8;  Opacidad al hacer hover */
 }
 
