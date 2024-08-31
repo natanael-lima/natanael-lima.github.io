@@ -131,14 +131,14 @@ const texts = {
 	const languageSwitchButton = document.getElementById('languageSwitchButton');
 	const languageIcon = document.getElementById('languageIcon');
 	let currentLang = 'es'; // Inicializa el idioma a español por defecto
-
+	
   // Función para cambiar el idioma
   function changeLanguage(lang) {
     if (lang === 'en') {
       languageIcon.src = "https://img.icons8.com/color/24/usa-circular.png";
       currentLang = 'en';
     } else if (lang === 'es') {
-      languageIcon.src = "https://img.icons8.com/color/24/argentina-circular.png";
+	  languageIcon.src = "https://img.icons8.com/fluency/48/argentina-circular.png";
       currentLang = 'es';
     }
 	 // Lógica para cambiar el idioma del contenido
@@ -173,9 +173,53 @@ const texts = {
   changeLanguage('es');
 });
 
+//Nuevo change mode
+document.addEventListener('DOMContentLoaded', function () {
+	const modeSwitchButton = document.getElementById('modeSwitchButton');
+	const modeIcon = document.getElementById('modeIcon');
+	let currentMode  = 'light'; // Inicializa el modo light por defecto
+	// Referencia al contenedor de la navbar
+	const nav = document.querySelector('nav');
+
+  // Función para cambiar 
+  function changeMode(mode) {
+    if (mode === 'light') {
+	  modeIcon.src = "https://img.icons8.com/ios-glyphs/30/FFFFFF/moon-symbol.png";
+	  currentMode = 'light';
+		document.body.classList.add('light-mode');
+		document.body.classList.remove('dark-mode');
+		nav.classList.add('nav-underline'); // Agregar clase para modo claro
+		nav.classList.remove('nav-underline-dark'); // Eliminar clase para modo oscuro
+      
+    } else if (mode === 'dark') {
+		modeIcon.src = "https://img.icons8.com/material-rounded/24/FFFFFF/sun--v1.png";
+		currentMode = 'dark';
+			document.body.classList.add('dark-mode');
+			document.body.classList.remove('light-mode');
+			nav.classList.add('nav-underline-dark'); // Agregar clase para modo oscuro
+			nav.classList.remove('nav-underline'); // Eliminar clase para modo claro
+    }
+   }
+ 
+   // Función para alternar el modo al hacer clic en el botón
+   function toggleMode() {
+		if (currentMode === 'light') {
+			changeMode('dark');
+		} else {
+			changeMode('light');
+		}
+  	}	
+
+	// Asigna el evento de clic al botón
+	modeSwitchButton.addEventListener('click', toggleMode);
+
+	// Inicializa por mode light al cargar la página
+	changeMode('light');
+});
+
 
 //Cambiar modo dark/light, por defecto esta en light
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
 	const toggleButton = document.getElementById('toggleButton');
 	const darkIcon = document.getElementById('dark-icon');
 	const lightIcon = document.getElementById('light-icon');
@@ -211,6 +255,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Inicializar en modo claro
 	switchMode();
-  });
-  
-
+  });*/
